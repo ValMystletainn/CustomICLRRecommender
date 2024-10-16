@@ -1,0 +1,10 @@
+{
+    "likes": [
+        "Distribution Backtracking Builds A Faster Convergence Trajectory for Diffusion Distillation",
+        "Diffusion Models for 4D Novel View Synthesis"
+    ],
+    "dislikes": [
+        "CELL-Diff: Unified Diffusion Modeling for Protein Sequences and Microscopy Images",
+        "Build your own cell: Diffusion Models for Multichannel 3D Microscopy Image Generation"
+    ]
+}

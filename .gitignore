@@ -1,6 +1,9 @@
 .pixi/
 .vscode/
 pixi.lock
+_build/
+output.md
+score_cdf.png
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

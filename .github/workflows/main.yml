@@ -1,0 +1,49 @@
+name: CustomICLRRecommendation
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    env:
+      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+      BASE_URL: /${{ github.event.repository.name }}
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 22.x
+    - name: install dependencies
+      run: pip install -r requirements.txt
+    - name: build markdown
+      # --num_threshold 1000 can turn to the exclusive options --score_threshold; example --score_threshold 0.5
+      # --likes and --dislikes can turn to the exclusive options --like_dislike_config; example --like_dislike_config ./likes_dislikes.json
+      # --emnbedding_from has another options title_abs, means the text embedding come from title and abstract together
+      run: >
+        python get_markdown.py
+        --crawl_result_dir outputs
+        --num_threshold 1000
+        --likes
+        "Distribution Backtracking Builds A Faster Convergence Trajectory for Diffusion Distillation" 
+        "Diffusion Models for 4D Novel View Synthesis"
+        --dislikes 
+        "CELL-Diff: Unified Diffusion Modeling for Protein Sequences and Microscopy Images" 
+        "Build your own cell: Diffusion Models for Multichannel 3D Microscopy Image Generation"
+        --embedding_from title
+        
+    - name: to myst pages
+      run:  myst build --html
+    - uses: actions/upload-artifact@v4
+      with:
+        path: output.md
+    - uses: actions/upload-pages-artifact@v1
+      with:
+        path: ./_build/html
+    - uses: actions/deploy-pages@v2

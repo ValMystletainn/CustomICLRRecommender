@@ -1,17 +1,18 @@
 import argparse
 import functools
+import itertools
 import json
 import logging
 import os
 import random
 import time
-import itertools
 from concurrent.futures import ThreadPoolExecutor
 
 import google.generativeai as genai
+import numpy as np
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.INFO)
 genai.configure(transport="rest")
 
 parser = argparse.ArgumentParser()
@@ -91,7 +92,7 @@ for file_name in crawl_results:
     ]
     embedding_to_file_name += [file_name] * batch_size
     embedding_to_inner_file_indices += list(range(batch_size))
-    embedding_to_fields += ["title_embeddings"] * batch_size
+    embedding_to_fields += ["title_embedding"] * batch_size
 
     ## title + abstract embeddings
 
@@ -107,15 +108,15 @@ for file_name in crawl_results:
     ]
     embedding_to_file_name += [file_name] * batch_size
     embedding_to_inner_file_indices += list(range(batch_size))
-    embedding_to_fields += ["title_abs_embeddings"] * batch_size
+    embedding_to_fields += ["title_abs_embedding"] * batch_size
 
 
-# get_embedding_funcs = get_embedding_funcs[:100]  # TODO: delete it
+# get_embedding_funcs = get_embedding_funcs[:1000]  # TODO: delete it
 
 get_embedding_funcs = [
     retry_with_timeout_decorator(
         max_retries=3,
-        base_delay=10,
+        base_delay=60 / 1200,  # 1500 RPM at peak, leave some redundency
         factor=2,
         jitter=True,
     )(func)
@@ -126,11 +127,14 @@ with ThreadPoolExecutor(max_workers=args.max_thread) as executor:
     embeddings = list(executor.map(lambda func: func(), get_embedding_funcs))
 
 embeddings = [d["embedding"] for d in embeddings]
+embeddings = np.array(embeddings)
+embeddings = embeddings.astype(np.float16)
+np.save(os.path.join(args.crawl_result_dir, "embeddings.npy"), embeddings)
 
 grouped_by_file_indices = list(range(len(embeddings)))
 grouped_by_file_indices.sort(key=lambda x: embedding_to_file_name[x])
 
-for file_name, indices in itertools.groupby(grouped_by_file_indices):
+for file_name, indices in itertools.groupby(grouped_by_file_indices, key=lambda x: embedding_to_file_name[x]):
     indices = list(indices)
     with open(file_name, "rt") as f:
         output_dicts = json.load(f)
@@ -138,7 +142,7 @@ for file_name, indices in itertools.groupby(grouped_by_file_indices):
     for index, embedding in zip(indices, embeddings):
         inner_index = embedding_to_inner_file_indices[index]
         field = embedding_to_fields[index]
-        output_dicts[inner_index][embedding_to_fields[index]] = embedding
+        output_dicts[inner_index][f"{embedding_to_fields[index]}_index"] = index
     
     with open(file_name + 'l', "wt") as f:  # TODO turn it to json
-        json.dump(output_dicts, f, indent=4)
+        json.dump(output_dicts, f)
