@@ -115,7 +115,7 @@ def main():
     ## output the markdown
     header = "# Your ICLR Recommendation list"
     header += "\n\n"
-    header += f"There is {len(favor_papers)} papers for you in ICLR 2025"
+    header += f"There are {len(favor_papers)} papers for you in ICLR 2025"
     header += "\n\n"
     dump_data_cdf(favor_scores)
     header += "![score_cdf](score_cdf.png)"
