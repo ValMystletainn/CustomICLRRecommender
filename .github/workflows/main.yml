@@ -21,7 +21,9 @@ jobs:
       with:
         node-version: 22.x
     - name: install dependencies
-      run: pip install -r requirements.txt
+      run: |
+        pip install -r requirements.txt
+        npm install -g mystmd
     - name: build markdown
       # --num_threshold 1000 can turn to the exclusive options --score_threshold; example --score_threshold 0.5
       # --likes and --dislikes can turn to the exclusive options --like_dislike_config; example --like_dislike_config ./likes_dislikes.json
