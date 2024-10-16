@@ -1,0 +1,202 @@
+[
+    {
+        "title": "Efficient Object-Centric Learning for Videos",
+        "link_suffix": "/forum?id=2HdZPEQUig",
+        "link": "https://openreview.net/forum?id=2HdZPEQUig",
+        "pdf_link": "https://openreview.net/pdf?id=2HdZPEQUig",
+        "keywords": "Object-Centric Learning, Representation Learning, Video, Segmentation, Video Object Segmentation",
+        "abstract": "This paper introduces a method for efficiently learning video-level object-centric representations by bootstrapping off a pre-trained image backbone, which we term Interpreter. It presents a novel hierarchical slot attention architecture with local learning and an optimal transport objective that yields fully unsupervised video segmentation. We first learn to compress images into image-level object-centric representations. Interpreter then learns to compress and reconstruct the object-centric representations for each frame across a video, allowing us to circumvent the costly process of reconstructing full frame feature maps. Unlike prior work, this allows us to scale to significantly longer videos without resorting to chunking videos into segments and matching between them. To deal with the unordered nature of object-centric representations, we employ Sinkhorn divergence, a relaxed optimal transport objective, to compute the distance between unordered sets of representations. We evaluate the resulting segmentation maps on video instance segmentation in both realistic and synthetic settings, using YTVIS-19 and MOVi-E, respectively. Interpreter achieves state-of-the-art results on the realistic YTVIS-19 dataset and presents a promising approach of scaling object-centric representation learning to longer videos."
+    },
+    {
+        "title": "Approximated Behavioral Metric-based State Projection for Federated Reinforcement Learning",
+        "link_suffix": "/forum?id=UtFoFyPYQo",
+        "link": "https://openreview.net/forum?id=UtFoFyPYQo",
+        "pdf_link": "https://openreview.net/pdf?id=UtFoFyPYQo",
+        "keywords": "Federated Learning;Reinforcement Learning;Bisimulation Metric",
+        "abstract": "Federated reinforcement learning (FRL) methods usually share the encrypted local state or policy information and help each client to learn from others while preserving everyone's privacy.\nIn this work, we propose that sharing the approximated behavior metric-based state projection function is a promising way to enhance the performance of FRL and concurrently provides an effective protection of sensitive information.\nWe introduce FedRAG, a FRL framework to learn a computationally practical projection function of states for each client and aggregating the parameters of projection functions at a central server. \nThe FedRAG approach shares no sensitive task-specific information, yet provides information gain for each client.\nWe conduct extensive experiments on the DeepMind Control Suite to demonstrate insightful results."
+    },
+    {
+        "title": "HyperSHAP: Shapley Values and Interactions for Hyperparameter Importance",
+        "link_suffix": "/forum?id=VZCxToUuNL",
+        "link": "https://openreview.net/forum?id=VZCxToUuNL",
+        "pdf_link": "https://openreview.net/pdf?id=VZCxToUuNL",
+        "keywords": "explainability, Shapley, interaction, hyperparameter optimization",
+        "abstract": "Hyperparameter optimization (HPO) is a crucial step in achieving strong predictive performance, particularly for deep learning with hyperparameters controlling the neural architecture and learning behavior. However, the impact of some hyperparameters on model generalization can vary significantly depending on the dataset and performance measure, making it challenging to generalize their importance. Gaining a better understanding of the importance of hyperparameters is therefore important to deepen our understanding of machine learning and to leverage this knowledge in future downstream HPO tasks, especially if training is expensive and HPO needs to be as efficient as possible.\nTo address these challenges, we propose a game theoretic framework based on Shapley values and interactions for HPO. These methods offer an additive decomposition of a performance measure across hyperparameters, enabling both local and global explanations of hyperparameter importance and interactions. Our framework, named HyperSHAP, provides insights into ablation studies, tunability of specific hyperparameter configurations, and entire configuration spaces. Through experiments, we demonstrate that focusing on the hyperparameters deemed important by our framework improves performance during subsequent hyperparameter optimization, while ignoring important hyperparameters or interactions degrades performance. This validates the effectiveness of our approach in enhancing model performance and providing interpretable explanations of hyperparameter importance."
+    },
+    {
+        "title": "Memory-Efficient Algorithm Distillation for In-context Reinforcement Learning",
+        "link_suffix": "/forum?id=5iWim8KqBR",
+        "link": "https://openreview.net/forum?id=5iWim8KqBR",
+        "pdf_link": "https://openreview.net/pdf?id=5iWim8KqBR",
+        "keywords": "algorithm distillation",
+        "abstract": "It's recently reported that by employing the superior In-context Learning (ICL) ability of autoregressive Transformer, a method named $\\textit{Algorithm Distillation}$ (AD) could distill the whole Reinforcement Learning process into neural network then generalize to $\\textit{unseen}$ scenarios with performance comparable to the distilled algorithm. However, to enable ICL, it's vital for self-attention module to have a context that spans cross-episodes histories and contains thousands of tokens. Such a long-range context and the quadratic memory complexity of self-attention pose difficulty on applying AD into many common RL tasks. \n   On the other hand, designing memory efficient Transformers for $\\textit{long-range document modeling}$ is itself a fast-developing and fruitful field, which leads to a natural question: $\\textit{Could Efficient Transformers exhibit similar in-context learning ability and be used for Memory-Efficient Algorithm Distillation?}$ In this paper, we firstly build a benchmark suite that is thorough, efficient and flexible. Thanks to it, we perform extensive experiments and verify an existing method named $\\textit{ERNIE-Docs}$ (ED) could offer competitive performance with significantly reduced memory footprint. With systematic ablation studies, we further investigate various facets influencing the ICL ability of ED and provide our own insights into its hyperparameter tuning."
+    },
+    {
+        "title": "LoKO: Low-Rank Kalman Optimizer for Online Fine-Tuning of Large Models",
+        "link_suffix": "/forum?id=AMegoEnlpS",
+        "link": "https://openreview.net/forum?id=AMegoEnlpS",
+        "pdf_link": "https://openreview.net/pdf?id=AMegoEnlpS",
+        "keywords": "Kalman Filter, Low-Rank Adaptation, online Fine-Tuning, Large Models",
+        "abstract": "Training large models with millions or even billions of parameters from scratch incurs substantial computational costs. Parameter Efficient Fine-Tuning (PEFT) methods, particularly Low-Rank Adaptation (LoRA), address this challenge by adapting only a reduced number of parameters to specific tasks with gradient-based optimizers. In this paper, we cast PEFT as an optimal filtering/state estimation problem and present Low-Rank Kalman Optimizer (LoKO) to estimate the optimal trainable parameters in an online manner. We leverage the low-rank decomposition in LoRA to significantly reduce matrix sizes in Kalman iterations and further capitalize on a diagonal approximation of the covariance matrix to effectively decrease computational complexity from quadratic to linear in the number of trainable parameters. Moreover, we discovered that the initialization of the covariance matrix within the Kalman algorithm and the accurate estimation of the observation noise covariance are the keys in this formulation, and we propose robust approaches that work well across a vast range of well-established computer vision and language models. Our results show that LoKO converges with fewer iterations and yields better performance models compared to commonly used optimizers with LoRA in both image classifications and language tasks. \nOur study opens up the possibility of leveraging the Kalman filter as an effective optimizer for the online fine-tuning of large models."
+    },
+    {
+        "title": "TP-Eval: Tap Multimodal LLMs' Potential in Evaluation by Customizing Prompts",
+        "link_suffix": "/forum?id=QnjUf0VytI",
+        "link": "https://openreview.net/forum?id=QnjUf0VytI",
+        "pdf_link": "https://openreview.net/pdf?id=QnjUf0VytI",
+        "keywords": "MLLM, benchmark, prompt customization, potential",
+        "abstract": "Recently, multimodal large language models (MLLMs) have received much attention for their impressive capabilities. The evaluation of MLLMs is becoming critical to analyzing attributes of MLLMs and providing valuable insights. However, current benchmarks overlook the problem of prompt sensitivity - minor prompt variations may lead to significant performance fluctuations. Thus, inappropriate prompts may obscure the models' capabilities, underestimating the models' performance.  Moreover, different models have different preferences for different prompts, and thus, using the same prompt for all models will cause evaluation bias. This paper analyzes this deficiency in existing benchmarks and further introduces a new evaluation framework named TP-Eval, which introduces a prompt customization method to reduce evaluation biases and tap models' potential. TP-Eval will rewrite the original prompts to different customized prompts for different models. In particular, we propose some well-designed modules for prompt customization tailored to the scenario of MLLM evaluation. Extensive experiments demonstrate the effectiveness of our approach to uncovering models' capabilities, and TP-Eval should benefit the community in developing more comprehensive and convincing MLLM evaluation benchmarks."
+    },
+    {
+        "title": "Dreamweaver: Learning Compositional World Models from Pixels",
+        "link_suffix": "/forum?id=e5mTvjXG9u",
+        "link": "https://openreview.net/forum?id=e5mTvjXG9u",
+        "pdf_link": "https://openreview.net/pdf?id=e5mTvjXG9u",
+        "keywords": "compositional world models, unsupervised object-centric learning",
+        "abstract": "Humans have an innate ability to decompose their perceptions of the world into objects and their attributes, such as colors, shapes, and movement patterns. This cognitive process enables us to imagine novel futures by recombining familiar concepts. However, replicating this ability in artificial intelligence systems has proven challenging, particularly when it comes to modeling videos into compositional concepts and generating unseen, recomposed futures without relying on auxiliary data, such as text, masks, or bounding boxes. In this paper, we propose Dreamweaver, a neural architecture designed to discover hierarchical and compositional representations from raw videos and generate compositional future simulations. Our approach leverages a novel Recurrent Block-Slot Unit (RBSU) to decompose videos into their constituent objects and attributes. In addition, Dreamweaver uses a multi-future-frame prediction objective to capture disentangled representations for dynamic concepts more effectively as well as static concepts. In experiments, we demonstrate our model outperforms current state-of-the-art baselines for world modeling when evaluated under the DCI framework across multiple datasets. Furthermore, we show how the modularized concept representations of our model enable compositional imagination, allowing the generation of novel videos by recombining attributes from different objects."
+    },
+    {
+        "title": "'No' Matters: Out-of-Distribution Detection in Multimodality Long Dialogue",
+        "link_suffix": "/forum?id=CaRkGrdewB",
+        "link": "https://openreview.net/forum?id=CaRkGrdewB",
+        "pdf_link": "https://openreview.net/pdf?id=CaRkGrdewB",
+        "keywords": "Natural Language Processing, Out-of-distribution Detection, Machine Learning, Multimodality Dialogue",
+        "abstract": "Out-of-distribution (OOD) detection in multimodal contexts is essential for identifying deviations in combined inputs from different modalities, particularly in applications like open-domain dialogue systems or real-life dialogue interactions. This paper aims to improve the user experience that involves multi-round long dialogues by efficiently detecting OOD dialogues and images. We introduce a novel scoring framework namedDialogueImageAligning andEnhancingFramework (DIAEF) that integrates the visual language models with the novel proposed scores that detect OOD in two key scenarios (1) mismatches between the dialogue and image input pair and (2) input pairs with previously unseen labels. Our experimental results, derived from various benchmarks, demonstrate that integrating image and multi-round dialogue OOD detection is more effective with previously unseen labels than using either modality independently. In the presence of mismatched pairs, our proposed score effectively identifies these mismatches and demonstrates strong robustness in long dialogues. This approach enhances domain-aware, adaptive conversational agents and establishes baselines for future studies."
+    },
+    {
+        "title": "Sample Efficient Alignment for LLMs",
+        "link_suffix": "/forum?id=Pf8i7cv2CH",
+        "link": "https://openreview.net/forum?id=Pf8i7cv2CH",
+        "pdf_link": "https://openreview.net/pdf?id=Pf8i7cv2CH",
+        "keywords": "rlhf, online dap, llm alignment, sample efficiency",
+        "abstract": "We study methods for sample-efficiently aligning large language models with human preferences given budgeted online feedback. \nWe first formulate the LLM alignment problem in the frame of contextual dueling bandits.\nThis bandit formulation, subsuming the recently emerging online RLHF / online DPO paradigms, naturally quests for sample-efficient algorithms.\nLeveraging insights from bandits, we investigate two algorithms for active exploration based on Thompson sampling and shed light on their use cases. Our agent, termed as Sea ($\\textbf{S}$ample $\\textbf{E}$fficient $\\textbf{A}$lignment), is empirically validated with extensive experiments, across 3 scales (1B, 2.8B, 6.9B) and 3 preference learning algorithms (DPO, IPO, SimPO). The results show that Sea aligns the LLM with oracle's preferences highly sample-efficiently, surpassing recent SoTA methods. We will open-source our codebase to accelerate the research in this field."
+    },
+    {
+        "title": "MorphAgent: Empowering Agents through Self-Evolving Profiles and Decentralized Collaboration",
+        "link_suffix": "/forum?id=8wIgDG87jn",
+        "link": "https://openreview.net/forum?id=8wIgDG87jn",
+        "pdf_link": "https://openreview.net/pdf?id=8wIgDG87jn",
+        "keywords": "self-evolving LLM agent, multi-agent collaboration",
+        "abstract": "Large Language Model (LLM) based multi-agent systems (MAS) have shown promise in tackling complex tasks, but often rely on predefined roles and centralized coordination, limiting their adaptability to evolving challenges. This paper introduces $MorphAgent$, a novel framework for $\\textit{decentralized}$ multi-agent collaboration that enables agents to $\\textit{dynamically evolve their roles and capabilities}$. Our approach employs self-evolving agent profiles, optimized through three key metrics, guiding agents in refining their individual expertise while maintaining complementary team dynamics. $MorphAgent$ implements a two-phase process: a warm-up phase for initial profile optimization, followed by a task execution phase where agents continuously adapt their roles based on task feedback. Our experimental results show that $MorphAgent$ outperforms traditional static-role MAS in terms of task performance and adaptability to changing requirements, paving the way for more robust and versatile multi-agent collaborative systems."
+    },
+    {
+        "title": "Rare event modeling with self-regularized normalizing flows: what can we learn from a single failure?",
+        "link_suffix": "/forum?id=gQoBw7sGAu",
+        "link": "https://openreview.net/forum?id=gQoBw7sGAu",
+        "pdf_link": "https://openreview.net/pdf?id=gQoBw7sGAu",
+        "keywords": "rare event modeling, normalizing flows, Bayesian inverse problems",
+        "abstract": "Increased deployment of autonomous systems in fields like transportation and robotics have seen a corresponding increase in safety-critical failures. These failures can be difficult to model and debug due to the relative lack of data: compared to tens of thousands of examples from normal operations, we may have only seconds of data leading up to the failure. This scarcity makes it challenging to train generative models of rare failure events, as existing methods risk either overfitting to noise in the limited failure dataset or underfitting due to an overly strong prior. We address this challenge with CalNF, or calibrated normalizing flows, a self-regularized framework for posterior learning from limited data. CalNF achieves state-of-the-art performance on data-limited failure modeling and inverse problems and enables a first-of-a-kind case study into the root causes of the 2022 Southwest Airlines scheduling crisis."
+    },
+    {
+        "title": "Getting Free Bits Back from Rotational Symmetries in LLMs",
+        "link_suffix": "/forum?id=B8aHIDSi7E",
+        "link": "https://openreview.net/forum?id=B8aHIDSi7E",
+        "pdf_link": "https://openreview.net/pdf?id=B8aHIDSi7E",
+        "keywords": "Model compression, bits-back, bit-back coding, coding, LLMs, Transformers",
+        "abstract": "Current methods for compressing neural network weights, such as decomposition, pruning, quantization, and channel simulation, often overlook the inherent symmetries within these networks and thus waste bits on encoding redundant information. In this paper, we propose a format based on bits-back coding for storing rotationally symmetric Transformer weights more efficiently than the usual array layout at the same floating-point precision. We evaluate our method on Large Language Models (LLMs) pruned by SliceGPT (Ashkboos et al., 2024) and achieve a 3-5% reduction in total bit usage for free across different model sizes and architectures without impacting model performance within a certain numerical precision."
+    },
+    {
+        "title": "CausalRivers - Scaling up benchmarking of causal discovery for real-world time-series",
+        "link_suffix": "/forum?id=wmV4cIbgl6",
+        "link": "https://openreview.net/forum?id=wmV4cIbgl6",
+        "pdf_link": "https://openreview.net/pdf?id=wmV4cIbgl6",
+        "keywords": "Causal Discovery, Benchmarking, Time-series",
+        "abstract": "Causal discovery, or identifying causal relationships from observational data, is a notoriously challenging task, with numerous methods proposed to tackle it.\nDespite this, in-the-wild evaluation is still lacking, as works frequently rely on synthetic data evaluation and sparse real-world examples under critical theoretical assumptions. \nReal-world causal structures, however, are often complex, evolving over time, non-linear, and influenced by unobserved factors, making\nit hard for practitioners to select appropriate methods. \nTo bridge this gap, we introduce CausalRivers, the largest in-the-wild causal discovery benchmarking kit for time series data to date.\nCausalRivers features an extensive dataset on river discharge that covers the complete eastern German territory (666 measurement stations) and the state of Bavaria (494  measurement stations). \nIt spans the years 2019 to 2023 with a 15-minute temporal resolution. \nFurther, we provide data from a recent flood around the Elbe River, as an event with a pronounced distributional shift. \nLeveraging multiple sources of information and time-series meta-data, we constructed two distinct causal ground truth graphs (Bavaria and eastern Germany).\nThese graphs can be sampled to generate thousands of subgraphs to benchmark causal discovery across diverse and challenging settings.\nTo demonstrate the utility of our benchmarking kit, we evaluate several causal discovery approaches through multiple experiments and introduce effective baselines, identifying several areas for enhancement.\nCausalRivers has the potential to facilitate robust evaluations and comparisons of causal discovery methods.\nBesides this primary purpose, we also expect that this dataset will be relevant for connected areas of research, such as time series forecasting and anomaly detection.\nBased on this, we hope to establish benchmark-driven method development that fosters advanced techniques for causal discovery, as is the case for many other areas of machine learning."
+    },
+    {
+        "title": "Length Representations in Large Language Models",
+        "link_suffix": "/forum?id=dNBE4ciYJF",
+        "link": "https://openreview.net/forum?id=dNBE4ciYJF",
+        "pdf_link": "https://openreview.net/pdf?id=dNBE4ciYJF",
+        "keywords": "LLMs, Length representation, Length control",
+        "abstract": "Large language models (LLMs) have shown remarkable capabilities across various tasks that are learned from massive amounts of text-based data. Although LLMs can control output sequence length, particularly through instruction-based settings, the internal mechanisms behind this control has been unexplored. In this study, we provide empirical evidence on how output sequence length information is encoded within the internal representations of LLMs. In particular, our findings show that multi-head attention mechanisms are critical in determining output sequence length, which can be adjusted in an editable manner. By scaling specific hidden units within the model, we can control the output sequence length without losing the informativeness of the generated text, thereby indicating that length information is partially separable from semantic information. Moreover, some hidden units become increasingly active as prompts become more length-specific, thus reflecting the model's internal awareness of this attribute. Our findings suggest that LLMs have learned robust and adaptable internal mechanisms for controlling output length without external controls."
+    },
+    {
+        "title": "Projection Head is Secretly an Information Bottleneck",
+        "link_suffix": "/forum?id=L0evcuybH5",
+        "link": "https://openreview.net/forum?id=L0evcuybH5",
+        "pdf_link": "https://openreview.net/pdf?id=L0evcuybH5",
+        "keywords": "Projection Head, Contrastive Learning, Self-supervised Learning",
+        "abstract": "Recently, contrastive learning has risen to be a promising paradigm for extracting meaningful data representations. Among various special designs, adding a projection head on top of the encoder during training and removing it for downstream tasks has proven to significantly enhance the performance of contrastive learning. However, despite its empirical success, the underlying mechanism of the projection head remains under-explored. In this paper, we develop an in-depth theoretical understanding of the projection head from the information-theoretic perspective. By establishing the theoretical guarantees on the downstream performance of the features before the projector, we reveal that an effective projector should act as an information bottleneck, filtering out the information irrelevant to the contrastive objective. Based on theoretical insights, we introduce modifications to projectors with training and structural regularizations. Empirically, our methods exhibit consistent improvement in the downstream performance across various real-world datasets, including CIFAR-10, CIFAR-100, and ImageNet-100. We believe our theoretical understanding on the role of the projection head will inspire more principled and advanced designs in this field."
+    },
+    {
+        "title": "WILTing Trees: Interpreting the Distance Between MPNN Embeddings",
+        "link_suffix": "/forum?id=9pBnp90o2D",
+        "link": "https://openreview.net/forum?id=9pBnp90o2D",
+        "pdf_link": "https://openreview.net/pdf?id=9pBnp90o2D",
+        "keywords": "Weisfeiler Leman test, Graph Neural Networks, Interpretability, Graph metric, Graph distance",
+        "abstract": "We empirically confirm that message passing neural networks (MPNNs) are implicitly trained so that the distance between their embeddings respects the functional distance of graphs. Since this property turns out to be highly correlated with the predictive performance of MPNNs, we propose a way to understand how MPNNs capture the functional distance. Specifically, we distill MPNNs into our proposed weighted Weisfeiler Leman Labeling Tree (WILT) while preserving the graph distance. The WILT yields an interpretable optimal transport distance between Weisfeiler Leman histograms, which generalizes existing high performance kernels and is computable in linear time. We then show experimentally that MPNNs define the relative position of embeddings by focusing on specific subgraphs known to be functionally important from domain knowledge."
+    },
+    {
+        "title": "Schur's Positive-Definite Network: Deep Learning in the SPD cone with structure",
+        "link_suffix": "/forum?id=v1B4aet9ct",
+        "link": "https://openreview.net/forum?id=v1B4aet9ct",
+        "pdf_link": "https://openreview.net/pdf?id=v1B4aet9ct",
+        "keywords": "sparsity, graphical lasso, lasso, deep learning, neural networks",
+        "abstract": "Estimating matrices in the symmetric positive-definite (SPD) cone is of interest for many applications ranging from computer vision to graph learning. While there exist various convex optimization-based estimators, they remain limited in expressivity due to their model-based approach. The success of deep learning motivates the use of learning-based approaches to estimate SPD matrices with neural networks in a data-driven fashion. However, designing effective neural architectures for SPD learning is challenging, particularly when the task requires\nadditional structural constraints, such as element-wise sparsity. Current approaches either do not ensure that the output meets all desired properties or lack expressivity. In this paper, we introduce SpodNet, a novel and generic learning module that guarantees SPD outputs and supports additional structural constraints. Notably, it solves the challenging task of learning jointly SPD and\nsparse matrices. Our experiments illustrate the versatility and relevance of SpodNet layers for such applications."
+    },
+    {
+        "title": "SFESS: Score Function Estimators fork-Subset Sampling",
+        "link_suffix": "/forum?id=q87GUkdQBm",
+        "link": "https://openreview.net/forum?id=q87GUkdQBm",
+        "pdf_link": "https://openreview.net/pdf?id=q87GUkdQBm",
+        "keywords": "subset, top-k, gradient estimation, score function estimator, variance reduction",
+        "abstract": "Are score function estimators a viable approach to learning with $k$-subset sampling? Sampling $k$-subsets is a fundamental operation in machine learning that is not amenable to differentiable parametrization, impeding gradient-based optimization. Prior work has focused on relaxed sampling or approximate pathwise gradients but dismissed score function estimators due to their high variance. Inspired by the success of score function estimators in variational inference and reinforcement learning, we revisit them within the context of $k$-subset sampling. Specifically, we demonstrate how to efficiently compute the $k$-subset distribution's score function using a discrete Fourier transform, and reduce the estimator's variance with control variates. The resulting estimator provides both exact samples and unbiased gradient estimates while being applicable to non-differentiable downstream models, unlike existing methods. We validate our approach in multiple experimental settings and find that comparable results can be achieved to recent state-of-the-art relaxed and approximate pathwise gradient methods, across all tasks."
+    },
+    {
+        "title": "SparseDM: Toward Sparse Efficient Diffusion Models",
+        "link_suffix": "/forum?id=3kADTLbKmm",
+        "link": "https://openreview.net/forum?id=3kADTLbKmm",
+        "pdf_link": "https://openreview.net/pdf?id=3kADTLbKmm",
+        "keywords": "Diffusion models, sparse pruning, 2:4 sparsity",
+        "abstract": "Diffusion models have been extensively used in data generation tasks and are recognized as one of the best generative models. However, their time-consuming deployment, long inference time, and requirements on large memory limit their application. In this paper, we propose a method based on the improved Straight-Through Estimator to improve the deployment efficiency of diffusion models. Specifically, we add sparse masks to the Convolution and Linear layers in a pre-trained diffusion model, then transfer learn the sparse model during the fine-tuning stage and turn on the sparse masks during inference. Experimental results on a Transformer and UNet-based diffusion models demonstrate that our method reduces MACs by 50% while increasing FID by only 0.44 on average.  Sparse models are accelerated by approximately 1.2x on the GPU. Under other MACs conditions, the FID is also lower than 1 compared to other methods."
+    },
+    {
+        "title": "ConcreTizer: Model Inversion Attack via Occupancy Classification and Dispersion Control for 3D Point Cloud Restoration",
+        "link_suffix": "/forum?id=I4iZmsV4HM",
+        "link": "https://openreview.net/forum?id=I4iZmsV4HM",
+        "pdf_link": "https://openreview.net/pdf?id=I4iZmsV4HM",
+        "keywords": "Inversion attack, 3D point cloud data, Autonomous vehicle",
+        "abstract": "The growing use of 3D point cloud data in autonomous vehicles (AVs) has raised serious privacy concerns, particularly due to the sensitive information that can be extracted from 3D data. While model inversion attacks have been widely studied in the context of 2D data, their application to 3D point clouds remains largely unexplored.\nTo fill this gap, we present the first in-depth study of model inversion attacks aimed at restoring 3D point cloud scenes. Our analysis reveals the unique challenges, the inherent sparsity of 3D point clouds and the ambiguity between empty and non-empty voxels after voxelization, which are further exacerbated by the dispersion of non-empty voxels across feature extractor layers. \nTo address these challenges, we introduce ConcreTizer, a simple yet effective model inversion attack designed specifically for 3D point cloud data. ConcreTizer incorporates Voxel Occupancy Classification to distinguish between empty and non-empty voxels and Dispersion-Controlled Supervision to mitigate non-empty voxel dispersion.\nExtensive experiments on widely used 3D feature extractors and benchmark datasets, such as KITTI and Waymo, demonstrate that ConcreTizer concretely restores the original 3D point cloud scene from disrupted 3D feature data. \nOur findings highlight both the vulnerability of 3D data to inversion attacks and the urgent need for robust defense strategies."
+    },
+    {
+        "title": "Sketch-Plan-Generalize: Learning Inductive Representations for Grounded Spatial Concepts",
+        "link_suffix": "/forum?id=k6OQ9VTZBZ",
+        "link": "https://openreview.net/forum?id=k6OQ9VTZBZ",
+        "pdf_link": "https://openreview.net/pdf?id=k6OQ9VTZBZ",
+        "keywords": "Neuro-symbolic AI, Concept learning, Robotics",
+        "abstract": "Our goal is to enable embodied agents to learn inductive representations for grounded spatial concepts, e.g., learning staircase as an inductive composition of towers of increasing height. Given few human demonstrations, we seek a learning architecture that infers a succinct inductiveprogramrepresentation thatexplainsthe observed instances. The approach should generalize to learning novel structures of different sizes or complexity expressed as a hierarchical composition of previously learned concepts.  Existing approaches that use code generation capabilities of pre-trained large (visual) language models, as well as purely neural models, show poor generalization toa-prioriunseen complex concepts. Our key insight is to factor inductive concept learning as: (i)Sketch:detecting and inferring a coarse signature of a new concept (ii)Plan:performing MCTS search over grounded action sequences (iii)Generalize:abstracting out  grounded plans as inductive programs. Our pipeline facilitates generalization and modular re-use enabling continual concept learning.  Our approach combines the benefits of code generation ability of large language models (LLMs) along with grounded neural representations, resulting in neuro-symbolic programs that show stronger inductive generalization on the task of constructing complex structures vis-'a-vis LLM-only and purely neural approaches. Further, we demonstrate reasoning and planning capabilities with learned concepts for embodied instruction following."
+    },
+    {
+        "title": "Polynomial Composition Activations: Unleashing the Dynamics of Large Language Models",
+        "link_suffix": "/forum?id=CbpWPbYHuv",
+        "link": "https://openreview.net/forum?id=CbpWPbYHuv",
+        "pdf_link": "https://openreview.net/pdf?id=CbpWPbYHuv",
+        "keywords": "activation function, transformer, pre-training, large language models",
+        "abstract": "Transformers have found extensive applications across various domains due to the powerful fitting capabilities. This success can be partially attributed to their inherent nonlinearity. Thus, in addition to the ReLU function employed in the original transformer architecture, researchers have explored alternative modules such as GeLU and SwishGLU to enhance nonlinearity and thereby augment representational capacity. In this paper, we propose a novel category of polynomial composition activations (PolyCom), designed to optimize the dynamics of transformers. Theoretically, we provide a comprehensive mathematical analysis of PolyCom, highlighting its enhanced expressivity and efficacy relative to other activation functions. Notably, we demonstrate that networks incorporating PolyCom achieve theoptimal approximation rate, indicating that PolyCom networks require minimal parameters to approximate general smooth functions in Sobolev spaces. We conduct empirical experiments on the pre-training configurations of large language models (LLMs), including both dense and sparse architectures. By substituting conventional activation functions with PolyCom, we enable LLMs to capture higher-order interactions within the data, thus improving performance metrics in terms of accuracy and convergence rates.  Extensive experimental results demonstrate the effectiveness of our method, showing substantial improvements over other activation functions."
+    },
+    {
+        "title": "Privacy-Preserving Federated Learning via Homomorphic Adversarial Networks",
+        "link_suffix": "/forum?id=tqYx8DgL0u",
+        "link": "https://openreview.net/forum?id=tqYx8DgL0u",
+        "pdf_link": "https://openreview.net/pdf?id=tqYx8DgL0u",
+        "keywords": "Federated Learning, Privacy Protection, Homomorphic Encryption, Homomorphic Adversarial Networks",
+        "abstract": "Privacy-preserving federated learning (PPFL) aims to train a global model for multiple clients while maintaining their data privacy. However, current PPFL protocols exhibit one or more of the following insufficiencies: considerable degradation in accuracy, the requirement for sharing keys, and cooperation during the key generation or decryption processes. As a mitigation, we develop the first protocol that utilizes neural networks to preserve privacy in federated learning, as well as incorporating an Aggregatable Hybrid Encryption scheme tailored to the needs of the PPFL. We name these networks as Homomorphic Adversarial Networks (HANs) which demonstrate that neural networks are capable of performing tasks similar to multi-key homomorphic encryption (MK-HE) while solving the problems of key distribution and collaborative decryption. Our experiments show that HANs are robust against privacy attacks. Compared with non-private federated learning, experiments conducted on multiple datasets demonstrate that HANs exhibit a negligible accuracy loss (at most 1.35%). Compared to traditional MK-HE schemes, HANs increase encryption aggregation speed by 6,075 times while incurring a 29.2-fold increase in communication overhead."
+    },
+    {
+        "title": "Inferences on Covariance Matrix with Blockwise Correlation Structure",
+        "link_suffix": "/forum?id=QtJiPhqnsV",
+        "link": "https://openreview.net/forum?id=QtJiPhqnsV",
+        "pdf_link": "https://openreview.net/pdf?id=QtJiPhqnsV",
+        "keywords": "Blockwise Correlation Matrix Estimation; Ridge-type Ratio Criterion; Spectral Clustering; Covariance Matrix.",
+        "abstract": "Utilizing the sample moments of variable means within groups, we develop a novel closed-form estimator for blockwise correlation matrix of $p$ variables. When the block number and group memberships of the variables are known, we demonstrate the asymptotic normality of parameter estimators and establish the stochastic convergence rate of the estimated blockwise correlation matrix and corresponding estimated covariance matrix, without imposing any distribution assumptions. The method ensures positive semi-definiteness of the estimated covariance matrix without requiring a predetermined variable order, and can be applicable for high-dimensional data. Moreover, to estimate the number of blocks and recover their memberships, respectively, we employ the ridge-type ratio criterion and spectral clustering, and establish their consistency. Extensive simulations and an empirical study of stock returns in the Chinese stock market are analyzed to illustrate the usefulness of our proposed methods."
+    },
+    {
+        "title": "Hybrid Contrastive Transformer for Visual Tracking",
+        "link_suffix": "/forum?id=FV5nsugDY1",
+        "link": "https://openreview.net/forum?id=FV5nsugDY1",
+        "pdf_link": "https://openreview.net/pdf?id=FV5nsugDY1",
+        "keywords": "visual tracking, contrastive learning, hybrid feature, redundant pruning",
+        "abstract": "Visual object tracking is a research hotspot in the field of computer vision, and has been widely applied in video surveillance, human-computer interaction, unmanned driving and other fields. At present, the object trackers based on Transformer have good performance, but they still face the challenge of confusing target and background in the feature extraction process. To address this issue, we propose a Hybrid Contrastive Transformer Tracker (HCTrack) in this paper, which combines contrastive learning to improve the ability of distinguishing the target and the background in video. Furthermore, a hybrid feature interaction module is presented to realize multi-level information exchange between the features of template and search regions and capture the target-related semantic information of the search frames comprehensively. Additionally, we design a redundant information pruning module to adaptively eliminate the redundant backgrounds according to the global scene information, thereby reducing the interference of the background to the target feature. HCTrack achieves superior tracking accuracy on the GOT-10k and TrackingNet datasets compared to other state-of-the-art trackers, while maintaining fast inference speed, as the contrastive learning is only implemented during training model."
+    }
+]

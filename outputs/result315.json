@@ -1,0 +1,202 @@
+[
+    {
+        "title": "Explaining Modern Gated-Linear RNNs via a Unified Implicit Attention Formulation",
+        "link_suffix": "/forum?id=wnT8bfJCDx",
+        "link": "https://openreview.net/forum?id=wnT8bfJCDx",
+        "pdf_link": "https://openreview.net/pdf?id=wnT8bfJCDx",
+        "keywords": "Explainability, Interpretability, Gated-Linear RNNs, Attention-free, Mamba",
+        "abstract": "Recent advances in efficient sequence modeling have led to attention-free layers, such as Mamba, RWKV, and various gated RNNs, all featuring sub-quadratic complexity in sequence length and excellent scaling properties, enabling the construction of a new type of foundation models. In this paper, we present a unified view of these models, formulating such layers as implicit causal self-attention layers. The formulation includes most of their sub-components and is not limited to a specific part of the architecture. The framework compares the underlying mechanisms on similar grounds for different layers and provides a direct means for applying explainability methods. Our experiments show that our attention matrices and attribution method outperform an alternative and a more limited formulation that was recently proposed for Mamba. For the other architectures for which our method is the first to provide such a view, our method is effective and competitive in the relevant metrics compared to the results obtained by state-of-the-art Transformer explainability methods. Our code is attached as a supplement."
+    },
+    {
+        "title": "Mamba Neural Operator: Who Wins? Transformers vs. State-Space Models for PDEs",
+        "link_suffix": "/forum?id=VtP7CamOR5",
+        "link": "https://openreview.net/forum?id=VtP7CamOR5",
+        "pdf_link": "https://openreview.net/pdf?id=VtP7CamOR5",
+        "keywords": "Neural Operator, Deep Learning, PDEs",
+        "abstract": "Partial differential equations (PDEs) are widely used to model complex physical systems, but solving them efficiently remains a significant challenge. Recently, Transformers have emerged as the preferred architecture for PDEs due to their ability to capture intricate dependencies. However, they struggle with representing continuous dynamics and long-range interactions. To overcome these limitations, we introduce the Mamba Neural Operator (MNO), a novel framework that enhances neural operator-based techniques for solving PDEs. MNO establishes a formal theoretical connection between structured state-space models (SSMs) and neural operators, offering a unified structure that can adapt to diverse architectures, including Transformer-based models. By leveraging the structured design of SSMs, MNO captures long-range dependencies and continuous dynamics more effectively than traditional Transformers. Through extensive analysis, we show that MNO significantly boosts the expressive power and accuracy of neural operators, making it not just a complement but a superior framework for PDE-related tasks, bridging the gap between efficient representation and accurate solution approximation."
+    },
+    {
+        "title": "AIR: Zero-shot Generative Model Adaptation with Iterative Refinement",
+        "link_suffix": "/forum?id=DuyuAHBk1t",
+        "link": "https://openreview.net/forum?id=DuyuAHBk1t",
+        "pdf_link": "https://openreview.net/pdf?id=DuyuAHBk1t",
+        "keywords": "Zero-shot Generative Model Adaptation, Transfer Learning, Prompt Learning, Multi-modal Representation Space",
+        "abstract": "Zero-shot generative model adaptation (ZSGM) aims to adapt a pre-trained generator to a target domain using only text guidance and without any samples from the target domain.\nCentral to recent ZSGM approaches aredirectional losswhich use the text guidance in the form of aligning the image offset with text offset in the embedding space of a vision-language model like CLIP.\nThis is similar to the analogical reasoning in NLP where the offset between one pair of words is used to identify a missing element in another pair by aligning the offset between these two pairs.\nHowever, a major limitation of existing ZSGM methods is that the learning objective assumes the complete alignment between image offset and text offset in the CLIP embedding space.Our workmakes two main contribution.\nInspired by the offset misalignment studies in NLP, as our first contribution, we perform an empirical study to analyze the misalignment between text offset and image offset in CLIP embedding space for various large publicly available datasets.\nOur important finding is that offset misalignment in CLIP embedding space is correlated with concept distance,i.e., close concepts have a less offset misalignment.\nTo address the limitations of the current approaches, as our second contribution, we propose Adaptaiotn with Iterative Refinement (AIR) which mitigates the offset misalignment issue in directional loss by iteratively selecting anchor points closer to the target domain.\nExtensive experimental results show that the proposed AIR approach achieves SOTA performance across various adaptation setups."
+    },
+    {
+        "title": "Recovering Time-Varying Networks From Single-Cell Data",
+        "link_suffix": "/forum?id=IT33VLRJuS",
+        "link": "https://openreview.net/forum?id=IT33VLRJuS",
+        "pdf_link": "https://openreview.net/pdf?id=IT33VLRJuS",
+        "keywords": "gene-regulatory-network, temporal-graphs, meta-learning, genomics, cell-types, neural-network, graph-structure-learning, covid-19, aging",
+        "abstract": "Gene regulation is a dynamic process that underlies all aspects of human development, disease response, and other key biological processes. The reconstruction of temporal gene regulatory networks has conventionally relied on regression analysis, graphical models, or other types of relevance networks. With the large increase in time series single-cell data, new approaches are needed to address the unique scale and nature of this data for reconstructing such networks. Here, we develop a deep neural network, Marlene, to infer dynamic graphs from time series single-cell gene expression data. Marlene constructs directed gene networks using a self-attention mechanism where the weights evolve over time using recurrent units. By employing meta learning, the model is able to recover accurate temporal networks even for rare cell types. In addition, it can identify gene interactions relevant to specific biological responses, including COVID-19 immune response, fibrosis, and aging, paving the way for potential treatments."
+    },
+    {
+        "title": "When Are Bias-Free ReLU Networks Effectively Linear Networks?",
+        "link_suffix": "/forum?id=7Dub7UXTXN",
+        "link": "https://openreview.net/forum?id=7Dub7UXTXN",
+        "pdf_link": "https://openreview.net/pdf?id=7Dub7UXTXN",
+        "keywords": "ReLU network, linear network, gradient flow, implicit bias",
+        "abstract": "We investigate the implications of removing bias in ReLU networks regarding their expressivity and learning dynamics. We first show that two-layer bias-free ReLU networks have limited expressivity: the only odd function two-layer bias-free ReLU networks can express is a linear one. We then show that, under symmetry conditions on the data, these networks have the same learning dynamics as linear networks. This enables us to give analytical time-course solutions to certain two-layer bias-free (leaky) ReLU networks, for the first time outside the lazy learning regime. While deep bias-free ReLU networks are more expressive than their two-layer counterparts, they still share a number of similarities with deep linear networks. These similarities enable us to leverage insights from linear networks, leading to a novel understanding of bias-free ReLU networks. Overall, our results show that some properties previously established for bias-free ReLU networks arise due to equivalence to linear networks."
+    },
+    {
+        "title": "Zero-shot Model-based Reinforcement Learning using Large Language Models",
+        "link_suffix": "/forum?id=uZFXpPrwSh",
+        "link": "https://openreview.net/forum?id=uZFXpPrwSh",
+        "pdf_link": "https://openreview.net/pdf?id=uZFXpPrwSh",
+        "keywords": "Model-based Reinforcement Learning, Large language models, Zero-shot Learning, In-context Learning",
+        "abstract": "The emerging zero-shot capabilities of Large Language Models (LLMs) have led to their applications in areas extending well beyond natural language processing tasks. \nIn reinforcement learning, while LLMs have been extensively used in text-based environments, their integration with continuous state spaces remains understudied. \nIn this paper, we investigate how pre-trained LLMs can be leveraged to predict in-context the dynamics of continuous Markov decision processes. \nWe identify handling multivariate data and incorporating the control signal as key challenges that limit the potential of LLMs deployment in this setup and propose several ways to address them. \nOur experimental results demonstrate that our approach produces well-calibrated uncertainty estimates, suitable for proprioceptive control tasks. \nWe further present proof-of-concept applications in two reinforcement learning settings: model-based policy evaluation and data-augmented off-policy reinforcement learning, supported by theoretical analysis of the proposed methods."
+    },
+    {
+        "title": "Unleashing the Potential of Diffusion Models for Incomplete Data Imputation",
+        "link_suffix": "/forum?id=3fl1SENSYO",
+        "link": "https://openreview.net/forum?id=3fl1SENSYO",
+        "pdf_link": "https://openreview.net/pdf?id=3fl1SENSYO",
+        "keywords": "Diffusion models, missing data imputation",
+        "abstract": "Generative models play an important role in missing data imputation in that they aim to learn the joint distribution of full data. However, applying advanced deep generative models (such as Diffusion models) to missing data imputation is challenging due to 1) the inherent incompleteness of the training data and 2) the difficulty in performing conditional inference from unconditional generative models. To deal with these challenges, this paper introduces DiffPuter, a tailored diffusion model combined with the Expectation-Maximization (EM) algorithm for missing data imputation. DiffPuter iteratively trains a diffusion model to learn the joint distribution of missing and observed data and performs an accurate conditional sampling to update the missing values using a tailored reversed sampling strategy. Our theoretical analysis shows that DiffPuter's training step corresponds to the maximum likelihood estimation of data density (M-step), and its sampling step represents the Expected A Posteriori estimation of missing values (E-step). Extensive experiments across ten diverse datasets and comparisons with 17 different imputation methods demonstrate DiffPuter's superior performance. Notably, DiffPuter achieves an average improvement of 8.10% in MAE and 5.64% in RMSE compared to the most competitive existing method."
+    },
+    {
+        "title": "Editable Concept Bottleneck Models",
+        "link_suffix": "/forum?id=Rv55TnDZ2W",
+        "link": "https://openreview.net/forum?id=Rv55TnDZ2W",
+        "pdf_link": "https://openreview.net/pdf?id=Rv55TnDZ2W",
+        "keywords": "interpretability, explainability, Concept Bottleneck Models",
+        "abstract": "Concept Bottleneck Models (CBMs) have garnered much attention for their ability to elucidate the prediction process through a human-understandable concept layer. However, most previous studies focused on cases where the data, including concepts, are clean. In many scenarios, we always need to remove/insert some training data or new concepts from trained CBMs due to different reasons, such as privacy concerns, data mislabelling, spurious concepts, and concept annotation errors. Thus, the challenge of deriving efficient editable CBMs without retraining from scratch persists, particularly in large-scale applications. To address these challenges, we propose Editable Concept Bottleneck Models (ECBMs). Specifically, ECBMs support three different levels of data removal: concept-label-level, concept-level, and data-level. ECBMs enjoy mathematically rigorous closed-form approximations derived from influence functions that obviate the need for re-training. Experimental results demonstrate the efficiency and effectiveness of our ECBMs, affirming their adaptability within the realm of CBMs."
+    },
+    {
+        "title": "XoRA: Expander adapted LoRA finetuning",
+        "link_suffix": "/forum?id=uBnVA7SeWv",
+        "link": "https://openreview.net/forum?id=uBnVA7SeWv",
+        "pdf_link": "https://openreview.net/pdf?id=uBnVA7SeWv",
+        "keywords": "LoRA fine-tuning, parameter efficient fine-tuning, expander masks",
+        "abstract": "Parameter-efficient fine-tuning aims to reduce the computational cost of adapting foundational models to downstream tasks. Low-rank matrix based adaptation (LoRA) techniques are popular for this purpose. We propose XoRA, an efficient fine-tuning scheme, which sparsifies the low-rank matrices even further using expander masks. The mask is generated using extremal expander graphs (Ramanujan graphs) to maintain high edge connectivity even at a very high sparsity. Experimental results demonstrate that this method has comparable performance with the LoRA fine-tuning method while retaining much fewer number of parameters."
+    },
+    {
+        "title": "TranSpa: Towards Efficient Structured Sparse Training for Transformers",
+        "link_suffix": "/forum?id=9bwPESShgf",
+        "link": "https://openreview.net/forum?id=9bwPESShgf",
+        "pdf_link": "https://openreview.net/pdf?id=9bwPESShgf",
+        "keywords": "Sparse Training, Transformer, Efficient Inference, Efficient Training",
+        "abstract": "Transformers have emerged as the backbone neural network architecture in today's AI applications. Due to their high complexity, sparsifying transformers, at both pre-training and fine-tuning stages, is very attractive for lower the training and inference costs. In this paper, we propose TranSpa, an efficient structured sparse training approach for language and vision transformers. Unlike prior works focusing on individual building blocks, TranSpa fully considers the correlation between the weight matrices and their component rows/columns, and performs the coupled estimation and coupled sparsification. To achieve that, TranSpa introduces the use of new granularity when calibrating the importance of structural components in the transformer and removing the insignificant parts. Evaluations across different models, in both pre-training and fine-tuning scenarios, demonstrate the effectiveness of the proposed approach. TranSpa can bring $1.6\\times$ size reduction with $0.6$ lower perplexity when training GPT-2 model from scratch. It also enables $1.6\\times$ training speedup over the existing sparse pre-training method. For training sparse LLaMA-1B from scratch, our approach reduces GPU memory usage by 50%, decreases training time by 21%, and achieves a $1.6\\times$ speedup in inference throughput while maintaining model performance. Experiments of applying TranSpa for fine-tuning tasks also show significant performance improvement with respect to model accuracy and pruning cost reduction."
+    },
+    {
+        "title": "Bridging The Gap Between Training and Testing for Certified Robustness",
+        "link_suffix": "/forum?id=OwtkY3LyvC",
+        "link": "https://openreview.net/forum?id=OwtkY3LyvC",
+        "pdf_link": "https://openreview.net/pdf?id=OwtkY3LyvC",
+        "keywords": "certified robustness, orthogonal convolution, expressive power, generalization",
+        "abstract": "Certified robustness provides a theoretical lower bound for adversarial robustness and arouses widespread interests and discussions from the research community. With theoretical support to improve the certified robustness on the training set, practitioners endeavor to train a more certified robust model during inference on the test set. However, the experimental neglect on the training set and the theoretical ignorance during inference on the test set induce a gap between training and testing for certified robustness. By establishing an equivalence between the convergence of training loss and the improvement of certified robustness, we recognize there is a trade-off between expressive power and generalization (assuming a well-conditioned optimization) for certified robustness, which is similar to the underfitting and overfitting discussed in machine learning. To investigate this trade-off, we design a new orthogonal convolution-Controllable Orthogonal Convolution Kernel (COCK) which provides a wider range of expressive power than existing orthogonal convolutions. Empirically, there is a power-driven shift from vanilla classification accuracy to certified robustness in the sense of the optimal trade-off between expressive power and generalization. The experimental results suggest that by carefully improving the expressive power from the optimal trade-off for vanilla classification performance, the model will be more certified robust."
+    },
+    {
+        "title": "Black Boxes and Looking Glasses: Multilevel Symmetries, Reflection Planes, and Convex Optimization in Deep Networks",
+        "link_suffix": "/forum?id=vpo2K9Xivv",
+        "link": "https://openreview.net/forum?id=vpo2K9Xivv",
+        "pdf_link": "https://openreview.net/pdf?id=vpo2K9Xivv",
+        "keywords": "deep neural networks, convex optimization, geometric algebra, Lasso model, sparsity",
+        "abstract": "We show that training deep neural networks (DNNs) with absolute value activation and arbitrary input dimension can be formulated as equivalent convex Lasso problems with novel features expressed using geometric algebra. This formulation reveals geometric structures encoding symmetry in neural networks. Using the equivalent Lasso form of DNNs, we formally prove a fundamental distinction between deep and shallow networks: deep networks inherently favor symmetric structures in their fitted functions, with greater depth enabling multilevel symmetries, i.e., symmetries within symmetries.  Moreover, Lasso features represent distances to hyperplanes that are reflected across training points. These reflection hyperplanes are spanned by training data and are orthogonal to optimal weight vectors. Numerical experiments support theory and demonstrate theoretically predicted features when training networks using embeddings generated by Large Language Models."
+    },
+    {
+        "title": "GeST: Towards Building A Generative Pretrained Transformer for Learning Cellular Spatial Context",
+        "link_suffix": "/forum?id=8e9KpZyksc",
+        "link": "https://openreview.net/forum?id=8e9KpZyksc",
+        "pdf_link": "https://openreview.net/pdf?id=8e9KpZyksc",
+        "keywords": "Generative model, Transformer, Spatial Transcriptomics",
+        "abstract": "Learning the spatial context of cells through pre-training may enable us to systematically decipher tissue organization and cellular interactions in multicellular organisms. Yet, existing models often focus on individual cells, neglecting the intricate spatial dynamics between them. We develop GeST, a deep generative transformer model that is pre-trained on the task of using information from neighboring cells to iteratively generate cellular profiles in spatial contexts. In GeST, we propose a novel serialization strategy to convert spatial data into sequences, a robust cell quantization method to tokenize continuous gene expression profiles, and a specialized attention mechanism in the transformer to enable efficient training. We pre-trained GeST on a large-scale spatial transcriptomics dataset from the mouse brain and demonstrated its performance in unseen cell generation. Our results also show that the pre-trained model can extract spatial niche embeddings in a zero-shot way and can be further fine-tuned for spatial annotation tasks. Furthermore, GeST can simulate gene expression changes in response to spatial perturbations, closely matching experimental results. Overall, GeST offers a powerful framework for generative pre-training on spatial transcriptomics."
+    },
+    {
+        "title": "High-quality Text-to-3D Character Generation with SparseCubes and Sparse Transformers.",
+        "link_suffix": "/forum?id=rfeksadZox",
+        "link": "https://openreview.net/forum?id=rfeksadZox",
+        "pdf_link": "https://openreview.net/pdf?id=rfeksadZox",
+        "keywords": "anime avatar, diffusion, transformer, large reconstruction model",
+        "abstract": "Current state-of-the-art text-to-3D generation methods struggle to produce 3D models with fine details and delicate structures due to limitations in differentiable mesh representation techniques. This limitation is particularly pronounced in anime character generation, where intricate features such as fingers, hair, and facial details are crucial for capturing the essence of the characters.In this paper, we introduce a novel, efficient, sparse differentiable mesh representation method, termed SparseCubes, alongside a sparse transformer network designed to generate high-quality 3D models. Our method significantly reduces computational requirements by over 95% and storage memory by 50%, enabling the creation of higher resolution meshes with enhanced details and delicate structures. We validate the effectiveness of our approach through its application to text-to-3D anime character generation, demonstrating its capability to accurately render subtle details and thin structures (e.g. individual fingers) in both meshes and textures."
+    },
+    {
+        "title": "Implicit Neural Surface Deformation with Explicit Velocity Fields",
+        "link_suffix": "/forum?id=sYAFiHP6qr",
+        "link": "https://openreview.net/forum?id=sYAFiHP6qr",
+        "pdf_link": "https://openreview.net/pdf?id=sYAFiHP6qr",
+        "keywords": "Implicit Shape Representation, Neural Implicit Representation, Shape Deformation, Neural Surfaces",
+        "abstract": "In this work, we introduce the first unsupervised method that simultaneously predicts time-varying neural implicit surfaces and deformations between pairs of point clouds. We propose to model the point movement using an explicit velocity field and directly deform a time-varying implicit field using the modified level-set equation. This equation utilizes an iso-surface evolution with Eikonal constraints in a compact formulation, ensuring the integrity of the signed distance field. By applying a smooth, volume-preserving constraint to the velocity field, our method successfully recovers physically plausible intermediate shapes. Our method is able to handle both rigid and non-rigid deformations without any intermediate shape supervision. Our experimental results demonstrate that our method significantly outperforms existing works, delivering superior results in both quality and efficiency."
+    },
+    {
+        "title": "Rethinking and Defending Protective Perturbation in Personalized Diffusion Models",
+        "link_suffix": "/forum?id=DblHBgD0GR",
+        "link": "https://openreview.net/forum?id=DblHBgD0GR",
+        "pdf_link": "https://openreview.net/pdf?id=DblHBgD0GR",
+        "keywords": "Protective Perturbations, Imperceptible Perturbations, Adversarial Purification, Diffusion-based Generative Models",
+        "abstract": "Personalized diffusion models (PDMs) have become prominent for adapting pretrained text-to-image models to generate images of specific subjects using minimal training data. However, PDMs are susceptible to minor adversarial perturbations, leading to significant degradation when fine-tuned on corrupted datasets. These vulnerabilities are exploited to create protective perturbations that prevent unauthorized image generation. Existing purification methods attempt to mitigate this issue but often over-purify images, resulting in information loss. In this work, we conduct an in-depth analysis of the fine-tuning process of PDMs through the lens of shortcut learning. We hypothesize and empirically demonstrate that adversarial perturbations induce a latent-space misalignment between images and their text prompts in the CLIP embedding space. This misalignment causes the model to erroneously associate noisy patterns with unique identifiers during fine-tuning, resulting in poor generalization. Based on these insights, we propose a systematic defense framework that includes data purification and contrastive decoupling learning. We first employ off-the-shelf image restoration techniques to realign images with their original semantic meanings in latent space. Then, we introduce contrastive decoupling learning with noise tokens to decouple the learning of personalized concepts from spurious noise patterns. Our study not only uncovers fundamental shortcut learning vulnerabilities in PDMs but also provides a comprehensive evaluation framework for developing stronger protection. Our extensive evaluation demonstrates its superiority over existing purification methods and stronger robustness against adaptive perturbation."
+    },
+    {
+        "title": "ProvCreator: Synthesizing Graph Data with Text Attributes",
+        "link_suffix": "/forum?id=GZVKo8T3EK",
+        "link": "https://openreview.net/forum?id=GZVKo8T3EK",
+        "pdf_link": "https://openreview.net/pdf?id=GZVKo8T3EK",
+        "keywords": "Synthetic, Graph, Security, Intrusion Detection, Provenance",
+        "abstract": "In cybersecurity, system provenance graphs are a key primitive to support intrusion detection and program identification tasks. Recent movement towards using data-hungry graph learning models for security-critical applications has exposed significant limitations in existing provenance datasets. Imbalanced representation of programs induces bias and performance degradation in downstream models. Further, these models rely on rich numeric and textual node attributes to accurately encode program behaviors, limiting the ability of existing data augmentation techniques to address data imbalance in provenance graphs.We present PROVCREATOR, a novel graph synthesis framework designed for feature-rich system provenance graphs. PROVCREATOR learns the joint distribution of node attributes and graph structures conditioned on program class labels, enabling targeted generation of realistic system provenance graphs to supplement underrepresented programs. Our evaluation shows that PROVCREATOR produces provenance graphs with higher structural fidelity, attribute fidelity, and downstream utility compared to those of previous graph synthesis methods."
+    },
+    {
+        "title": "Data-Driven Discovery of PDEs via the Adjoint Method",
+        "link_suffix": "/forum?id=LwAG269lIq",
+        "link": "https://openreview.net/forum?id=LwAG269lIq",
+        "pdf_link": "https://openreview.net/pdf?id=LwAG269lIq",
+        "keywords": "PDE discovery, Symbolic Regression, Adjoint method",
+        "abstract": "In this work, we present an adjoint-based method for discovering the underlying governing partial differential equations (PDEs) given data. The idea is to consider a parameterized PDE in a general form and formulate a PDE-constrained optimization problem aimed at minimizing the error of the PDE solution from data. Using variational calculus, we obtain an evolution equation for the Lagrange multipliers (adjoint equations) allowing us to compute the gradient of the objective function with respect to the parameters of PDEs given data in a straightforward manner. In particular, we consider a family of parameterized PDEs encompassing linear, nonlinear, and spatial derivative candidate terms, and elegantly derive the corresponding adjoint equations. We show the efficacy of the proposed approach in identifying the form of the PDE up to machine accuracy, enabling the accurate discovery of PDEs from data. We also compare its performance with the famous PDE Functional Identification of Nonlinear Dynamics method known as PDE-FIND  [Rudy, Samuel H., et al. Science advances 3.4 (2017): e1602614.], on both smooth and noisy data sets. Even though the proposed adjoint method relies on forward/backward solvers, it outperforms PDE-FIND for large data sets thanks to the analytic expressions for gradients of the cost function with respect to each PDE parameter."
+    },
+    {
+        "title": "Utilization of Neighbor Information for Image Classification with Different Levels of Supervision",
+        "link_suffix": "/forum?id=n6KBvTQ10I",
+        "link": "https://openreview.net/forum?id=n6KBvTQ10I",
+        "pdf_link": "https://openreview.net/pdf?id=n6KBvTQ10I",
+        "keywords": "Generalized Category Discovery, Image Clustering, Image Classification",
+        "abstract": "We propose to bridge the gap between semi-supervised and unsupervised image recognition with a flexible method that performs well for both generalized category discovery (GCD) and image clustering. Despite the overlap in motivation between these tasks, the methods themselves are restricted to a single task \u2013 GCD methods are reliant on the labeled portion of the data, and deep image clustering methods have no built-in way to leverage the labels efficiently. We connect the two regimes with an innovative approach that Utilizes Neighbor Information for Classification (UNIC) both in the unsupervised (clustering) and semisupervised (GCD) setting. State-of-the-art clustering methods already rely heavily on nearest neighbors. We improve on their results substantially in two parts, first with a sampling and cleaning strategy where we identify accurate positive and negative neighbors, and secondly by finetuning the backbone with clustering losses computed by sampling both types of neighbors. We then adapt this pipeline to GCD by utilizing the labelled images as ground truth neighbors. Our method yields state-of-the-art results for both clustering (+3% ImageNet-100, Imagenet- 200) and GCD (+0.8% ImageNet-100, +5% CUB-200)."
+    },
+    {
+        "title": "Diffusion-Nested Auto-Regressive Synthesis of Heterogeneous Tabular Data",
+        "link_suffix": "/forum?id=kkGIbmpCHU",
+        "link": "https://openreview.net/forum?id=kkGIbmpCHU",
+        "pdf_link": "https://openreview.net/pdf?id=kkGIbmpCHU",
+        "keywords": "Tabular data synthesis, autoregressive models, diffusion models",
+        "abstract": "Autoregressive models are predominant in natural language generation, while their application in tabular data remains underexplored. We posit that this can be attributed to two factors: 1) tabular data contains heterogeneous data type, while the autoregressive model is primarily designed to model discrete-valued data; 2) tabular data is column permutation-invariant, requiring a generation model to generate columns in arbitrary order. This paper proposes a Diffusion-nested Autoregressive model (TabDAR) to address these issues. To enable autoregressive methods for continuous columns, TabDAR employs a diffusion model to parameterize the conditional distribution of continuous features. To ensure arbitrary generation order, TabDAR resorts to masked transformers with bi-directional attention, which simulate various permutations of column order,  hence enabling it to learn the conditional distribution of a target column given an arbitrary combination of other columns. These designs enable TabDAR to not only freely handle heterogeneous tabular data but also support convenient and flexible unconditional/conditional sampling. We conduct extensive experiments on ten datasets with distinct properties, and the proposed TabDAR outperforms previous state-of-the-art methods by 18% to 45% on eight metrics across three distinct aspects."
+    },
+    {
+        "title": "Towards Better Understanding Open-set Noise in Learning with Noisy Labels",
+        "link_suffix": "/forum?id=EzB0n8aRqI",
+        "link": "https://openreview.net/forum?id=EzB0n8aRqI",
+        "pdf_link": "https://openreview.net/pdf?id=EzB0n8aRqI",
+        "keywords": "Open-set noise, Noisy labels",
+        "abstract": "To reduce reliance on labeled data, learning with noisy labels (LNL) has garnered increasing attention. However, most existing works primarily assume that noisy datasets are dominated by closed-set noise, where the true labels of noisy samples come from another known category, thereby overlooking the widespread presence of open-set noise\u2014where the true labels may not belong to any known category.\nIn this paper, we refine the LNL problem by explicitly accounting for the presence of open-set noise. We theoretically analyze and compare the impacts of open-set and closed-set noise, as well as the differences between various open-set noise modes. Additionally, we examine a common open-set noise detection mechanism based on prediction entropy. To empirically validate our theoretical insights, we construct two open-set noisy datasets\u2014CIFAR100-O and ImageNet-O\u2014and introduce a novel open-set test set for the widely used real-world noisy dataset, WebVision. Our findings indicate that open-set noise exhibits distinct qualitative and quantitative characteristics, underscoring the need for further exploration into how models can be fairly and comprehensively evaluated under such conditions."
+    },
+    {
+        "title": "GTR: Semi-supervised Learning with Grouping and Transporting for Robust Thresholding",
+        "link_suffix": "/forum?id=EjJD16oaly",
+        "link": "https://openreview.net/forum?id=EjJD16oaly",
+        "pdf_link": "https://openreview.net/pdf?id=EjJD16oaly",
+        "keywords": "Semi-supervised Learning, Grouping, Thresholding, Plug-and-play, Pseudo-labeling",
+        "abstract": "Semi-supervised learning (SSL) digs unlabeled data by pseudo-labeling when labeled data is limited. Despite various auxiliary strategies enhancing SSL training, the main challenge is how to determine reliable pseudo labels through a robust thresholding algorithm based on quality indicators (e.g., confidence scores). However, the existing strategies for distinguishing low or high-quality labels through simple grouping indicators remain in trivial design, ignoring the characteristics of the data distribution itself, which cannot guarantee robustness and efficiency. To this end, we group the quality indicators of pseudo labels into three clusters (easy, semi-hard, and hard) and statistically reveal the real bottleneck of threshold selection, i.e., the sensitivity of semi-hard samples, through empirical analysis. We propose an adaptive Grouping and Transporting method that Robustly selects semi-hard samples with test-time augmentations and consistency constraints while saving the selection budgets of easy and hard samples, dubbed as GTR. Our proposed GTR can effectively determine high-quality data when applied to existing SSL methods while reducing redundant costs in the selection. Extensive experiments on 11 SSL benchmarks across three modalities verify that GTR can achieve significant performance gains and speedups over Pseudo Label, FixMatch, and FlexMatch."
+    },
+    {
+        "title": "Multi-Label Node Classification with Label Influence Propagation",
+        "link_suffix": "/forum?id=3X3LuwzZrl",
+        "link": "https://openreview.net/forum?id=3X3LuwzZrl",
+        "pdf_link": "https://openreview.net/pdf?id=3X3LuwzZrl",
+        "keywords": "graph neural networks, multi-label, node classification",
+        "abstract": "Graphs are a complex and versatile data structure used across various domains, with possibly multi-label nodes playing a particularly crucial role. \nExamples include proteins in PPI networks with multiple functions and users in social or e-commerce networks exhibiting diverse interests. \nTackling multi-label node classification (MLNC) on graphs has led to the development of various approaches. Some methods leverage graph neural networks (GNNs) to exploit label co-occurrence correlations, while others incorporate label embeddings to capture label proximity. However, these approaches fail to account for the intricate influences between labels in non-Euclidean graph data.\nTo address this issue, we decompose the message passing process in GNNs into two operations: propagation and transformation. \nWe then conduct a comprehensive analysis and quantification of the influence correlations between labels in each operation. \nBuilding on these insights, we propose a novel model, Label Influence Propagation (LIP). \nSpecifically, we construct a label influence graph based on the integrated label correlations. \nThen, we propagate high-order influences through this graph, dynamically adjusting the learning process by amplifying labels with positive contributions and mitigating those with negative influence.\nFinally, our framework is evaluated on comprehensive benchmark datasets, consistently outperforming SOTA methods across various settings, demonstrating its effectiveness on MLNC tasks."
+    },
+    {
+        "title": "Interpreting the Second-Order Effects of Neurons in CLIP",
+        "link_suffix": "/forum?id=GPDcvoFGOL",
+        "link": "https://openreview.net/forum?id=GPDcvoFGOL",
+        "pdf_link": "https://openreview.net/pdf?id=GPDcvoFGOL",
+        "keywords": "CLIP, neurons, interpretability",
+        "abstract": "We interpret the function of individual neurons in CLIP by automatically describing them using text. Analyzing the direct effects (i.e. the flow from a neuron through the residual stream to the output) or the indirect effects (overall contribution) fails to capture the neurons' function in CLIP. Therefore, we present the \"second-order lens\", analyzing the effect flowing from a neuron through the later attention heads, directly to the output. We find that these effects are highly selective: for each neuron, the effect is significant for <2% of the images. Moreover, each effect can be approximated by a single direction in the text-image space of CLIP. We describe neurons by decomposing these directions into sparse sets of text representations. The sets reveal polysemantic behavior - each neuron corresponds to multiple, often unrelated, concepts (e.g. ships and cars). Exploiting this neuron polysemy, we mass-produce \"semantic\" adversarial examples by generating images with concepts spuriously correlated to the incorrect class. Additionally, we use the second-order effects for zero-shot segmentation, outperforming previous methods. Our results indicate that a automated interpretation of neurons can be used for model deception and for introducing new model capabilities"
+    },
+    {
+        "title": "Learning Utilities from Demonstrations in Markov Decision Processes",
+        "link_suffix": "/forum?id=Iq7wD4BG30",
+        "link": "https://openreview.net/forum?id=Iq7wD4BG30",
+        "pdf_link": "https://openreview.net/pdf?id=Iq7wD4BG30",
+        "keywords": "Inverse Reinforcement Learning, Risk, Imitation Learning, Theory",
+        "abstract": "Our goal is to extract useful knowledge from demonstrations of behavior in sequential decision-making problems. Although it is well-known that humans commonly engage inrisk-sensitivebehaviors in the presence of stochasticity, most Inverse Reinforcement Learning (IRL) models assume arisk-neutralagent. Beyond introducing model misspecification, these models do not directly capture the risk attitude of the observed agent, which can be crucial in many applications. In this paper, we propose a novel model of behavior in Markov Decision Processes (MDPs) that explicitly represents the agent's risk attitude through autilityfunction. We then define the Utility Learning (UL) problem as the task of inferring the observed agent's risk attitude, encoded via a utility function, from demonstrations in MDPs, and we analyze the partial identifiability of the agent's utility. Furthermore, we devise two provably efficient algorithms for UL in a finite-data regime, and we analyze their sample complexity. We conclude with proof-of-concept experiments that empirically validate both our model and our algorithms."
+    }
+]

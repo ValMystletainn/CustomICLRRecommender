@@ -1,0 +1,20 @@
+[project]
+authors = ["wuwenxu wu.wenxu@outlook.com>"]
+channels = ["conda-forge"]
+description = "get"
+name = "CustomICLR"
+platforms = ["linux-64"]
+
+[tasks]
+crawl = "python main.py"
+get_embeddings = "python get_embeddings.py"
+
+[dependencies]
+
+python = "3.11.*"
+
+
+[pypi-dependencies]
+google-generativeai = ">=0.8.1"
+crawl4ai = ">=0.3.6"
+numpy = ">=1.20.0"

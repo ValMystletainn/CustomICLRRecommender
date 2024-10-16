@@ -1,0 +1,202 @@
+[
+    {
+        "title": "A case for data valuation transparency via DValCards",
+        "link_suffix": "/forum?id=4mFEb3JvMc",
+        "link": "https://openreview.net/forum?id=4mFEb3JvMc",
+        "pdf_link": "https://openreview.net/pdf?id=4mFEb3JvMc",
+        "keywords": "data valuation, fair compensation, transparency, fairness, bias",
+        "abstract": "Following the rise in popularity of data-centric machine learning (ML), various data valuation methods have been proposed to quantify the contribution of each datapoint to desired ML model performance metrics (e.g., accuracy). Beyond the technical applications of data valuation methods (e.g., data cleaning, data acquisition, etc.), it has been suggested that within the context of data markets, data buyers might utilize such methods to fairly compensate data owners. Here we demonstrate that data valuation metrics are inherently biased and unstable under simple algorithmic design choices, resulting in both technical and ethical implications. By analyzing 9 tabular classification datasets and 6 data valuation methods, we illustrate how (1) common and inexpensive data pre-processing techniques can drastically alter estimated data values; (2) subsampling via data valuation metrics may increase class imbalance; and (3) data valuation metrics may undervalue underrepresented group data. Consequently, we argue in favor of increased transparency associated with data valuation in-the-wild and introduce the novel Data Valuation Cards (DValCards) framework towards this aim. The proliferation of DValCards will reduce misuse of data valuation metrics, including in data pricing, and build trust in responsible ML systems."
+    },
+    {
+        "title": "Frequency-Guided Masking for Enhanced Vision Self-Supervised Learning",
+        "link_suffix": "/forum?id=VmJdqhuTCh",
+        "link": "https://openreview.net/forum?id=VmJdqhuTCh",
+        "pdf_link": "https://openreview.net/pdf?id=VmJdqhuTCh",
+        "keywords": "Self-supervised learning, Frequency domain analysis, Knowledge distillation, Vision Self-Supervised Learning, Pre-training",
+        "abstract": "We present a novel frequency-based Self-Supervised Learning (SSL) approach that significantly enhances its efficacy for pre-training. Prior work in this direction masks out pre-defined frequencies in the input image and employs a reconstruction loss to pre-train the model. While achieving promising results, such an implementation has two fundamental limitations as identified in our paper. First, using pre-defined frequencies overlooks the variability of image frequency responses. Second, pre-trained with frequency-filtered images, the resulting model needs relatively more data to adapt to naturally looking images during fine-tuning. To address these drawbacks, we propose FOurier transform compression with seLf-Knowledge distillation (FOLK), integrating two dedicated ideas. First, inspired by image compression, we adaptively select the masked-out frequencies based on image frequency responses, creating more suitable SSL tasks for pre-training. Second, we employ a two-branch framework empowered by knowledge distillation, enabling the model to take both the filtered and original images as input, largely reducing the burden of downstream tasks. Our experimental results demonstrate the effectiveness of FOLK in achieving competitive performance to many state-of-the-art SSL methods across various downstream tasks, including image classification, few-shot learning, and semantic segmentation."
+    },
+    {
+        "title": "Rethinking Reward Modeling in Preference-based Large Language Model Alignment",
+        "link_suffix": "/forum?id=rfdblE10qm",
+        "link": "https://openreview.net/forum?id=rfdblE10qm",
+        "pdf_link": "https://openreview.net/pdf?id=rfdblE10qm",
+        "keywords": "Bradley-Terry Model, Reward Modeling, Large Language Models",
+        "abstract": "The Bradley-Terry (BT) model is a common and successful practice in reward modeling for Large Language Model (LLM) alignment. However, it remains unclearwhythis model --- originally developed for multi-player stochastic game matching --- can be adopted to convert pairwise response comparisons to reward values and make predictions. Especially given the fact that only a limited number of prompt-response pairs are sparsely compared with others. \nIn this paper, we first establish the convergence rate of BT reward models based on deep neural networks using embeddings, providing a theoretical foundation for their use.\nDespite theoretically sound, we argue that the BT model is not a necessary choice from the perspective of downstream optimization, this is because a reward model only needs to preserve the correct ranking predictions through a monotonic transformation of the true reward. \nWe highlight the critical concept oforder consistencyin reward modeling and demonstrate that the BT model possesses this property.\nMoreover, we propose a simple and straightforward upper-bound algorithm, compatible with off-the-shelf binary classifiers, as an alternative order-consistent reward modeling objective. \nTo offer practical insights, we empirically evaluate the performance of these different reward modeling approaches across more than 12,000 experimental setups, using $6$ base LLMs, $2$ datasets, and diverse annotation designs that vary in quantity, quality, and pairing choices in preference annotations."
+    },
+    {
+        "title": "Unclipping CLIP's Wings: Avoiding Robustness Pitfalls in Multimodal Image Classification",
+        "link_suffix": "/forum?id=DPp5GSohht",
+        "link": "https://openreview.net/forum?id=DPp5GSohht",
+        "pdf_link": "https://openreview.net/pdf?id=DPp5GSohht",
+        "keywords": "robustness, CLIP, spurious correlations, contrastive learning, multimodality",
+        "abstract": "Despite being pretrained on large-scale data, multimodal models such as CLIP can still learn spurious correlations. However, CLIP does not seem to learn the same spurious correlations as standard vision models, performing worse on some benchmark datasets (Waterbirds) yet better on others (CelebA). We investigate this discrepancy and find that CLIP's robustness on these datasets is highly sensitive to the choice of class prompts. Worst-group accuracy can be arbitrarily improved or worsened by making minute, single-word changes to prompts. We further provide evidence that the root cause of this phenomenon is \\textit{coverage} --- using class prompts that are out-of-distribution with respect to pretraining can worsen spurious correlations. Motivated by these findings, we propose using class prompts that are generated from a public image-to-text model, such as BLIP. We show that performing $k$-nearest neighbors on these prompt embeddings improve downstream robustness without needing to fine-tune CLIP."
+    },
+    {
+        "title": "Context Matters: Leveraging Contextual Features for Time Series Forecasting",
+        "link_suffix": "/forum?id=xW4J2QlqRx",
+        "link": "https://openreview.net/forum?id=xW4J2QlqRx",
+        "pdf_link": "https://openreview.net/pdf?id=xW4J2QlqRx",
+        "keywords": "Time series forecasting, Contextual features, Predictive modeling",
+        "abstract": "Time series forecasts are often influenced by exogenous contextual features in addition to their corresponding history. For example, in financial settings, it is hard to accurately predict a stock price without considering public sentiments and policy decisions in the form of news articles, tweets, etc. Though this is common knowledge, the current state-of-the-art (SOTA) forecasting models fail to incorporate such contextual information, owing to its heterogeneity and multimodal nature. To address this, we introduce ContextFormer, a novel plug-and-play method to surgically integrate multimodal contextual information into existing pre-trained forecasting models. ContextFormer effectively distills forecast-specific information from rich multimodal contexts, including categorical, continuous, time-varying, and even textual information, to significantly enhance the performance of existing base forecasters. ContextFormer outperforms SOTA forecasting models by up to 30% on a range of real-world datasets spanning energy, traffic, environmental, and financial domains."
+    },
+    {
+        "title": "Towards unlocking the mystery of adversarial fragility of neural networks",
+        "link_suffix": "/forum?id=2ErS9Bkc3O",
+        "link": "https://openreview.net/forum?id=2ErS9Bkc3O",
+        "pdf_link": "https://openreview.net/pdf?id=2ErS9Bkc3O",
+        "keywords": "deep learning, adversarial attack, adversarial robustness",
+        "abstract": "In this paper, we study the adversarial robustness of deep neural networks for classification tasks. The adversarial robustness of a classification algorithm is defined as the smallest magnitude of possible additive perturbations that can change the output of the classification algorithm.  We provide a matrix-theoretic explanation of the adversarial fragility of deep neural network. In particular, our theoretical results show that neural network's adversarial robustness can degrade as the input dimension $d$ increases.  Analytically we show that neural networks' adversarial robustness can be only $1/\\sqrt{d}$ of the best possible adversarial robustness.  Our matrix-theoretic explanation is consistent with an earlier information-theoretic feature-compression-based explanation for the adversarial robustness of neural networks."
+    },
+    {
+        "title": "Generalization v.s. Memorization: Tracing Language Models\u2019 Capabilities Back to Pretraining Data",
+        "link_suffix": "/forum?id=IQxBDLmVpT",
+        "link": "https://openreview.net/forum?id=IQxBDLmVpT",
+        "pdf_link": "https://openreview.net/pdf?id=IQxBDLmVpT",
+        "keywords": "language model, pretraining data, n-gram, memorization",
+        "abstract": "The impressive capabilities of large language models (LLMs) have sparked debate over whether these models genuinely generalize to unseen tasks or predominantly rely on memorizing vast amounts of pretraining data. To explore this issue, we introduce an extended concept of memorization, distributional memorization, which measures the correlation between the LLM output probabilities and the pretraining data frequency. To effectively capture task-specific pretraining data frequency, we propose a novel task-gram language model, which is built by counting the co-occurrence of semantically related $n$-gram pairs from task inputs and outputs in the pretraining corpus. Using the Pythia models trained on the Pile dataset, we evaluate three distinct tasks: machine translation, factual question answering, and reasoning. Our findings reveal varying levels of memorization, with the strongest effect observed in factual question answering. Furthermore, while model performance improves across all tasks as LLM size increases, only factual question answering shows an increase in memorization, whereas machine translation and reasoning tasks exhibit greater generalization, producing more novel outputs. This study demonstrates that memorization plays a larger role in simpler, knowledge-intensive tasks, while generalization is the key for harder, reasoning-based tasks, providing a scalable method for analyzing large pretraining corpora in greater depth."
+    },
+    {
+        "title": "Contextual Bandits with Entropy-based Human Feedback",
+        "link_suffix": "/forum?id=NnwDdPDwUq",
+        "link": "https://openreview.net/forum?id=NnwDdPDwUq",
+        "pdf_link": "https://openreview.net/pdf?id=NnwDdPDwUq",
+        "keywords": "Contextual bandits, human feedback",
+        "abstract": "In recent years, preference-based human feedback mechanisms have become integral to improving model performance across a range of applications, including conversational AI systems like ChatGPT. However, existing methodologies often overlook critical factors such as model uncertainty and variability in feedback quality. To address these limitations, we propose an innovative entropy-based human feedback framework designed for contextual bandits, which balances exploration and exploitation by soliciting expert feedback when model entropy surpasses a predefined threshold. Our method is model-agnostic and adaptable to any contextual bandit agent employing stochastic policies. Through rigorous experimentation, we demonstrate that our approach requires minimal human feedback to achieve significant performance gains, even with suboptimal feedback quality. Our work not only introduces a novel feedback solicitation strategy but also underscores the robustness of integrating human guidance into machine learning systems. Our code is publicly available: \\url{https://anonymous.4open.science/r/CBHF-33C5}"
+    },
+    {
+        "title": "Mixture of insighTful Experts (MoTE): The Synergy of Thought Chains and Expert Mixtures in Safety Self-Alignment",
+        "link_suffix": "/forum?id=nTAC2NCQUO",
+        "link": "https://openreview.net/forum?id=nTAC2NCQUO",
+        "pdf_link": "https://openreview.net/pdf?id=nTAC2NCQUO",
+        "keywords": "mixture of experts, lora, chain of thoughts, LLM safety",
+        "abstract": "As the capabilities of large language models (LLMs) have expanded dramatically, aligning these models with human values presents a significant challenge. Recent studies demonstrate that powerful LLMs can achieve self-alignment by either correcting their initial unsafe responses or autonomously ranking answers without human intervention. In this work, we identify two key limitations: first, they rely on the assumed emergent capabilities of LLMs, and second, they discard all intermediate reasoning steps when aligning the model with updated answers. To address these challenges, we propose a novel self-alignment method that utilizes a Chain of Thought (CoT) approach, termed AlignCoT. This method encompasses stages of Question Analysis, Answer Guidance, and Safe Answer production. It is designed to enable LLMs, even smaller and weaker models like 7B LLMs, to produce high-quality, safe responses. Furthermore, we introduce the Mixture of insighTful Experts (MoTE) architecture, which applies mixture of experts to enhance each component of the AlignCoT process, markedly increasing alignment efficiency. The MoTE approach not only outperforms existing methods in aligning LLMs with human values but also highlights the benefits of using self-generated data, revealing the dual benefits of improved alignment and training efficiency."
+    },
+    {
+        "title": "On the onset of memorization to generalization transition in diffusion  models",
+        "link_suffix": "/forum?id=XeGSIr7z6u",
+        "link": "https://openreview.net/forum?id=XeGSIr7z6u",
+        "pdf_link": "https://openreview.net/pdf?id=XeGSIr7z6u",
+        "keywords": "diffusion models, memorization, generalization, inductive bias, curse of dimensionality, denoising",
+        "abstract": "As the training set size increases, diffusion models have been observed to transition from memorizing the training dataset to generalizing to and sampling from the underlying data distribution. To study this phenomenon more closely, here, we first present a mathematically principled definition of this transition: the model is said to be in the generalization regime if the generated distribution is closer to the sampling distribution compared to the probability distribution associated with a Gaussian kernel approximation to the training dataset. Then, we develop an analytically tractable diffusion model that features this transition when the training data is sampled from an isotropic Gaussian distribution. Our study reveals that this transition occurs when the distance between the generated and underlying sampling distribution begins to decrease rapidly with the addition of more training samples. This is to be contrasted with an alternative scenario, where the model's memorization performance degrades, but generalization performance doesn't improve. We also provide empirical evidence indicating that realistic diffusion models exhibit the same alignment of scales."
+    },
+    {
+        "title": "EraseDiff: Erasing Data Influence in Diffusion Models",
+        "link_suffix": "/forum?id=4CR5Uc9EYf",
+        "link": "https://openreview.net/forum?id=4CR5Uc9EYf",
+        "pdf_link": "https://openreview.net/pdf?id=4CR5Uc9EYf",
+        "keywords": "machine unlearning, diffusion model",
+        "abstract": "We introduce EraseDiff, an unlearning algorithm designed for diffusion models to address concerns related to data memorization. Our approach formulates the unlearning task as a constrained optimization problem, aiming to preserve the utility of the diffusion model on retained data while removing the information associated with the data to be forgotten. This is achieved by altering the generative process to deviate away from the ground-truth denoising procedure. \nTo manage the computational complexity inherent in the diffusion process, we develop a first-order method for solving the optimization problem, which has shown empirical benefits. Extensive experiments and thorough comparisons with state-of-the-art algorithms demonstrate that EraseDiff effectively preserves the model's utility, efficacy, and efficiency."
+    },
+    {
+        "title": "Transformers Handle Endogeneity in In-Context Linear Regression",
+        "link_suffix": "/forum?id=QfhU3ZC2g1",
+        "link": "https://openreview.net/forum?id=QfhU3ZC2g1",
+        "pdf_link": "https://openreview.net/pdf?id=QfhU3ZC2g1",
+        "keywords": "endogeneity, instrumental variables, transformers, bi-level gradient descent",
+        "abstract": "We explore the capability of transformers to address endogeneity in in-context linear regression. Our main finding is that transformers inherently possess a mechanism to handle endogeneity effectively using instrumental variables (IV). First, we demonstrate that the transformer architecture can emulate a gradient-based bi-level optimization procedure that converges to the widely used two-stage least squares (2SLS) solution at an exponential rate. Next, we propose an in-context pretraining scheme and provide theoretical guarantees showing that the global minimizer of the pre-training loss achieves a small excess loss. Our extensive experiments validate these theoretical findings, showing that the trained transformer provides more robust and reliable in-context predictions and coefficient estimates than the 2SLS method, in the presence of endogeneity."
+    },
+    {
+        "title": "Data Valuation for Graphs",
+        "link_suffix": "/forum?id=VW21r9rTjE",
+        "link": "https://openreview.net/forum?id=VW21r9rTjE",
+        "pdf_link": "https://openreview.net/pdf?id=VW21r9rTjE",
+        "keywords": "Graphs Machine Learning, Data Valuation, Graph Neural Network",
+        "abstract": "What is the worth of a node? We answer this question using an emerging set of data valuation techniques, where the value of a data point is measured via its marginal contribution when added to the (training) dataset. Data valuation has been primarily studied in the i.i.d. setting, giving rise to methods like influence functions, leave-one-out estimation, data Shapley, and data Banzhaf. We conduct a comprehensive study of data valuation approaches applied to graph-structured models such as graph neural networks in a semi-supervised transductive setting. Since all nodes (labeled and unlabeled) influence both training and inference we construct various scenarios to understand the diverse mechanisms by which nodes can impact learning. We show that the resulting node values can be used to identify (positively and negatively) influential nodes, quantify model brittleness, detect poisoned data, and accurately predict counterfactuals."
+    },
+    {
+        "title": "Grokking at the Edge of Linear Separability",
+        "link_suffix": "/forum?id=l1raPjOUPA",
+        "link": "https://openreview.net/forum?id=l1raPjOUPA",
+        "pdf_link": "https://openreview.net/pdf?id=l1raPjOUPA",
+        "keywords": "Grokking, Logistic Regression, Interpolation Threshold, Memorization and Learning",
+        "abstract": "We study the generalization properties of binary logistic classification in a simplified setting, for which a \"memorizing\" and \"generalizing\" solution can always be strictly defined, and elucidate empirically and analytically the mechanism underlying Grokking in its dynamics. Concretely, we show that binary logistic classification on a random feature model with a constant label exhibits Grokking, in the sense of delayed generalization and non-monotonic test loss. We find that Grokking is amplified when classification is applied to training sets on the verge of being linearly separable from the origin. Even though a perfect generalizing solution always exists, we prove the implicit bias of the logistic loss will cause the model to overfit if the training data is linearly separable from the origin. For training sets that are not separable from the origin, the model will always generalize perfectly asymptotically, but overfitting may occur at early stages of training. Importantly, in the vicinity of the transition, that is, for training sets that are almost separable from the origin, the model may overfit for arbitrarily long times before generalizing. We gain more insights by examining a tractable one-dimensional toy model that quantitatively captures the key features of the full model. Finally, we highlight intriguing common properties of our findings with recent literature, suggesting that grokking generally occurs in proximity to the interpolation threshold, reminiscent of critical phenomena often observed in physical systems."
+    },
+    {
+        "title": "How Does Critical Batch Size Scale in Pre-training?",
+        "link_suffix": "/forum?id=JCiF03qnmi",
+        "link": "https://openreview.net/forum?id=JCiF03qnmi",
+        "pdf_link": "https://openreview.net/pdf?id=JCiF03qnmi",
+        "keywords": "Pre-training, Language Models, Data Parallelism, Optimization",
+        "abstract": "Training large-scale models under given resource budgets requires the careful design of parallelism strategies. In particular, the efficiency notion of critical batch size (CBS), concerning the compromise between time and compute, marks the point beyond which greater data parallelism leads to diminishing returns. To operationalize it, we propose a measure of CBS and pre-train a series of auto-regressive language models, ranging from 85 million to 1.2 billion parameters, on the C4 dataset. Through extensive hyper-parameter sweeps and careful control of factors such as batch size, momentum, and learning rate along with its scheduling, we systematically investigate the impact of scale on CBS. Then we fit scaling laws with respect to model and data sizes to decouple their effects. Overall, our results demonstrate that CBS scales primarily with data size rather than model size, a finding we justify theoretically through the analysis of infinite-width limits of neural networks and infinite-dimensional least squares regression. Of independent interest, we highlight the importance of common hyper-parameter choices and strategies for studying large-scale pre-training beyond fixed training durations."
+    },
+    {
+        "title": "Actionable Inverse Classification with Action Fairness Guarantees",
+        "link_suffix": "/forum?id=kc3QtI6NBF",
+        "link": "https://openreview.net/forum?id=kc3QtI6NBF",
+        "pdf_link": "https://openreview.net/pdf?id=kc3QtI6NBF",
+        "keywords": "Algorithm Fairness, Explainability",
+        "abstract": "Machine learning (ML) classifiers are increasingly used in critical decision-making domains such as finance, healthcare, and the judiciary. However, their interpretability and fairness remain significant challenges, often leaving users without clear guidance on how to improve unfavourable outcomes. This paper introduces an actionable ML framework that provides minimal, explainable modifications to input data to change classification results. We also propose a novel concept of \"action fairness,\" which ensures that users from different subgroups incur similar costs when altering their classification outcomes. Our approach identifies the nearest decision boundary point to a given query, allowing for the determination of minimal cost actions. We demonstrate the effectiveness of this method using real-world credit assessment data, showing that our solution not only improves the fairness of classifier outcomes but also enhances their usability and interpretability."
+    },
+    {
+        "title": "Comparing Targeting Strategies for Maximizing Social Welfare with Limited Resources",
+        "link_suffix": "/forum?id=0iscEAo2xB",
+        "link": "https://openreview.net/forum?id=0iscEAo2xB",
+        "pdf_link": "https://openreview.net/pdf?id=0iscEAo2xB",
+        "keywords": "social welfare, causality, treatment, treatment effect, targeting, risk, policymaking",
+        "abstract": "Machine learning is increasingly used to select which individuals receive limited resource interventions in domains such as human services, education, development, and more. However, it is often not apparent what the right quantity is for models to predict. In particular, policymakers rarely have access to data from a randomized controlled trial (RCT) that would enable accurate estimates of treatment effects \u2013 which individuals would benefit more from the intervention. Observational data is more likely to be available, creating a substantial risk of bias in treatment effect estimates. Practitioners instead commonly use a technique termed \u201crisk-based targeting\u201d where the model is just used to predict each individual\u2019s status quo outcome (an easier, non-causal task). Those with higher predicted risk are offered treatment. There is currently almost no empirical evidence to inform which choices lead to the most effect machine learning-informed targeting strategies in social domains. In this work, we use data from 5 real-world RCTs in a variety of domains to empirically assess such choices. We find that risk-based targeting is almost always inferior to targeting based on even biased estimates of treatment effects. Moreover, these results hold even when the policymaker has strong normative preferences for assisting higher-risk individuals. Our results imply that, despite the widespread use of risk prediction models in applied settings, practitioners may be better off incorporating even weak evidence about heterogeneous causal effects to inform targeting."
+    },
+    {
+        "title": "The logic of rational graph neural networks",
+        "link_suffix": "/forum?id=VSklRu8KTH",
+        "link": "https://openreview.net/forum?id=VSklRu8KTH",
+        "pdf_link": "https://openreview.net/pdf?id=VSklRu8KTH",
+        "keywords": "Graph Neural Networks, Rational activations, Expressivity, Logic",
+        "abstract": "The expressivity of Graph Neural Networks (GNNs) can be described via appropriate fragments of the first-order logic. In this context, uniform expressivity guarantees that a GNN can express a logical query without the parameters depending on the size of the input graphs.  It has been established that the two-variable guarded fragment with counting (GC2) can be  expressed uniformly via Rectified Linear Unit (ReLU) GNNs [Barcelo &. Al., 2020]. Moreover,  GC2 is the fragment that can be expressed at most by a GNN with any activation function. In this article, we prove that, on the contrary of ReLU GNNs, there are GC2  queries that cannot be uniformly expressed via any GNN with rational activations. As a consequence, non-polynomial activation functions do not grant GNNs GC2 uniform expressivity in general, answering an open question formulated by [Grohe, 2021].  We then  present a strict subfragment of GC2 (RGC2), and prove that rational GNNs can express RGC2 queries uniformly over all graphs. Our  numerical experiments illustrates that despite this theoretical disadvantage, rational GNNs are still able to learn some GC2 queries if some level of error is allowed."
+    },
+    {
+        "title": "Learning DAGs and Root Causes from Time-Series Data",
+        "link_suffix": "/forum?id=6O8lh1jIwI",
+        "link": "https://openreview.net/forum?id=6O8lh1jIwI",
+        "pdf_link": "https://openreview.net/pdf?id=6O8lh1jIwI",
+        "keywords": "time-series data, root causes, sparsity, structured vector autoregression, directed acyclic graphs",
+        "abstract": "We introduce DAG-TFRC, a novel method for learning directed acyclic graphs (DAGs) from time series with few root causes. By this, we mean that the data are generated by a small number of events at certain, unknown nodes and time points under a structural vector autoregression model. For such data, we (i) learn the DAGs representing both the instantaneous and time-lagged dependencies between nodes, and (ii) discover the location and time of the root causes. For synthetic data with few root causes, DAG-TFRC shows superior performance in accuracy and runtime over prior work, scaling up to thousands of nodes. Experiments on simulated and real-world financial data demonstrate the viability of our sparse root cause assumption. On S&P 500 data, DAG-TFRC successfully clusters stocks by sectors and discovers major stock movements as root causes."
+    },
+    {
+        "title": "MAD-Sherlock: Multi-Agent Debates for Out-of-Context Misinformation Detection",
+        "link_suffix": "/forum?id=Br42izY8eU",
+        "link": "https://openreview.net/forum?id=Br42izY8eU",
+        "pdf_link": "https://openreview.net/pdf?id=Br42izY8eU",
+        "keywords": "misinformation detection, out-of-context image use, LLMs, multimodal models, multi-agent debates, safety",
+        "abstract": "One of the most challenging forms of misinformation involves the out-of-context (OOC) use of images paired with misleading text, creating false narratives. Existing AI-driven detection systems lack explainability and require expensive finetuning. We address these issues with MAD-Sherlock: a Multi-Agent Debate system for OOC Misinformation Detection. MAD-Sherlock introduces a novel multi-agent debate framework where multimodal agents collaborate to assess contextual consistency and request external information to enhance cross-context reasoning and decision-making. Our framework enables explainable detection with state-of-the-art accuracy even without domain-specific fine-tuning. Extensive ablation studies confirm that external retrieval significantly improves detection accuracy, and user studies demonstrate that MAD-Sherlock boosts performance for both experts and non-experts. These results position MAD-Sherlock as a powerful tool for autonomous and citizen intelligence applications."
+    },
+    {
+        "title": "Reshaping Model Output Space Via Deep Kernel Density Estimation Networks",
+        "link_suffix": "/forum?id=cSd8Eom8Zt",
+        "link": "https://openreview.net/forum?id=cSd8Eom8Zt",
+        "pdf_link": "https://openreview.net/pdf?id=cSd8Eom8Zt",
+        "keywords": "Deep KDE, probability density transformations, Kernel Density Estimation",
+        "abstract": "Traditional classification models are typically optimized solely for their specific training task without considering the properties of the underlying probability distribution of their output space. As the use of these models for downstream tasks becomes more prevalent, it becomes advantageous to have a framework that can transform the output space of such models to a more convenient space without\nsacrificing performance. In this paper, we introduce DeepKDE, a novel method which enables the transformation of arbitrary output spaces to match more desirable distributions, such as Normal and Gaussian Mixture Models. We explore the properties of the new method and test its effectiveness on ResNet-18 and vision transformers trained on CIFAR-10 and Fashion MNIST datasets. We show that DeepKDE models succeed in transforming the output spaces of the original models while outperforming them in terms of accuracy."
+    },
+    {
+        "title": "Federated Granger Causality Learning For Interdependent Clients With State Space Representation",
+        "link_suffix": "/forum?id=KTgQGXz5xj",
+        "link": "https://openreview.net/forum?id=KTgQGXz5xj",
+        "pdf_link": "https://openreview.net/pdf?id=KTgQGXz5xj",
+        "keywords": "State Space, Federated Learning, Granger Causality, Interdependencies",
+        "abstract": "Advanced sensors and IoT devices have improved the monitoring and control of complex industrial enterprises. They have also created an interdependent fabric of geographically distributed process operations (clients) across these enterprises. Granger causality is an effective approach to detect and quantify interdependencies by examining how the state of one client affects the states of others over time. Understanding these interdependencies helps capture how localized events, such as faults and disruptions, can propagate throughout the system, potentially leading to widespread operational impacts. However, the large volume and complexity of industrial data present significant challenges in effectively modeling these interdependencies. This paper develops a federated approach to learning Granger causality. We utilize a linear state space system framework that leverages low-dimensional state estimates to analyze interdependencies. This helps address bandwidth limitations and the computational burden commonly associated with centralized data processing. We propose augmenting the client models with the Granger causality information learned by the server through a Machine\nLearning (ML) function. We examine the co-dependence between the augmented client and server models and reformulate the framework as a standalone ML algorithm providing conditions for its sublinear and linear convergence rates. We also study the convergence of the framework to a centralized oracle model. Using synthetic data, we conduct comprehensive experiments to demonstrate the robustness of our approach to perturbations in causality, the scalability to the size of communication, number of clients, and the dimensions of raw data. We also evaluate the performance on two real-world industrial control system datasets by reporting the volume of data saved by decentralization."
+    },
+    {
+        "title": "Improving Source Extraction with Diffusion and Consistency Models",
+        "link_suffix": "/forum?id=nR2DHRxWS2",
+        "link": "https://openreview.net/forum?id=nR2DHRxWS2",
+        "pdf_link": "https://openreview.net/pdf?id=nR2DHRxWS2",
+        "keywords": "source extraction, consistency models, score-matching diffusion",
+        "abstract": "In this work, we demonstrate the integration of a score-matching diffusion model into a deterministic architecture for time-domain musical source extraction, resulting in enhanced audio quality. To address the typically slow iterative sampling process of diffusion models, we apply consistency distillation and reduce the sampling process to a single step, achieving performance comparable to that of diffusion models, and with two or more steps, even surpassing them. Trained on the Slakh2100 dataset for four instruments (bass, drums, guitar, and piano), our model shows significant improvements across objective metrics compared to baseline methods. Sound examples are available athttps://consistency-separation.github.io/."
+    },
+    {
+        "title": "Convex Formulations for Training Two-Layer ReLU Neural Networks",
+        "link_suffix": "/forum?id=e0X9l4kecx",
+        "link": "https://openreview.net/forum?id=e0X9l4kecx",
+        "pdf_link": "https://openreview.net/pdf?id=e0X9l4kecx",
+        "keywords": "copositive programming, semidefinite programming, neural networks",
+        "abstract": "Solving non-convex, NP-hard optimization problems is crucial for training machine learning models, including neural networks. However, non-convexity often leads to black-box machine learning models with unclear inner workings. While convex formulations have been used for verifying neural network robustness, their application to training neural networks remains less explored. In response to this challenge, we reformulate the problem of training infinite-width two-layer ReLU networks as a convex completely positive program in a finite-dimensional (lifted) space. Despite the convexity, solving this problem remains NP-hard due to the complete positivity constraint. To overcome this challenge, we introduce a semidefinite relaxation that can be solved in polynomial time. We then experimentally evaluate the tightness of this relaxation, demonstrating its competitive performance in test accuracy across a range of classification tasks."
+    },
+    {
+        "title": "On Temperature Scaling and Conformal Prediction of Deep Classifiers",
+        "link_suffix": "/forum?id=MxHgnYbxly",
+        "link": "https://openreview.net/forum?id=MxHgnYbxly",
+        "pdf_link": "https://openreview.net/pdf?id=MxHgnYbxly",
+        "keywords": "classification, temperature scaling, conformal prediction, conditional coverage, prediction sets",
+        "abstract": "In many classification applications, the prediction of a deep neural network (DNN) based classifier needs to be accompanied by some confidence indication. Two popular approaches for that aim are: 1)Calibration: modifies the classifier's softmax values such that the maximal value better estimates the correctness probability; and 2)Conformal Prediction(CP): produces a prediction set of candidate labels that contains the true label with a user-specified probability, guaranteeing marginal coverage but not, e.g., per class coverage.  In practice, both types of indications are desirable, yet, so far the interplay between them has not been investigated. \nFocusing on the ubiquitousTemperature Scaling(TS) calibration, we start this paper with an extensive empirical study of its effect on prominent CP methods. We show that while TS calibration improves the class-conditional coverage of adaptive CP methods, surprisingly, it negatively affects their prediction set sizes. Motivated by this behavior, we explore the effect of TS on CPbeyond its calibration applicationand reveal an intriguing trend under which it allows to trade prediction set size and conditional coverage of adaptive CP methods. Then, we establish a mathematical theory that explains the entire non-monotonic trend.\nFinally, based on our experiments and theory, we offer simple guidelines for practitioners to effectively combine adaptive CP with calibration."
+    }
+]

@@ -1,0 +1,202 @@
+[
+    {
+        "title": "Adversarial Search Engine Optimization for Large Language Models",
+        "link_suffix": "/forum?id=hkdqxN3c7t",
+        "link": "https://openreview.net/forum?id=hkdqxN3c7t",
+        "pdf_link": "https://openreview.net/pdf?id=hkdqxN3c7t",
+        "keywords": "large language models, security, prompt injection, search engine optimization, function calling",
+        "abstract": "Large Language Models (LLMs) are increasingly used in applications where the model selects from competing third-party content, such as in LLM-powered search engines or chatbot plugins. In this paper, we introducePreference Manipulation Attacks, a new class of attacks that manipulate an LLM\u2019s selections to favor the attacker. We demonstrate that carefully crafted website content or plugin documentations can trick an LLM to promote the attacker products and discredit competitors, thereby increasing user traffic and monetization. We show this leads to aprisoner\u2019s dilemma, where all parties are incentivized to launch attacks, but the collective effect degrades the LLM\u2019s outputs for everyone. We demonstrate our attacks on production LLM search engines (Bing and Perplexity) and plugin APIs (for GPT-4 and Claude). As LLMs are increasingly used to rank third-party content, we expect Preference Manipulation Attacks to emerge as a significant threat."
+    },
+    {
+        "title": "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing",
+        "link_suffix": "/forum?id=XQgbmhQozV",
+        "link": "https://openreview.net/forum?id=XQgbmhQozV",
+        "pdf_link": "https://openreview.net/pdf?id=XQgbmhQozV",
+        "keywords": "Large Language Models, Human values, Human ethics, Evaluation, Adaptive testing",
+        "abstract": "Warning: this paper contains model outputs exhibiting unethical information.Large Language Models (LLMs) have achieved significant breakthroughs, but their generated unethical content poses potential risks. Measuring value alignment of LLMs becomes crucial for their regulation and responsible deployment. Numerous datasets have been constructed to assess social bias, toxicity, and ethics in LLMs, but they suffer from evaluation chronoeffects, that is, as models rapidly evolve, existing data becomes leaked or undemanding, overestimating ever-developing LLMs. To tackle this problem, we propose GETA, a novel generative evolving testing approach that dynamically probes the underlying moral baselines of LLMs. Distinct from previous adaptive testing methods that rely on static datasets with limited difficulty, GETA incorporates an iteratively-updated item generator which infers each LLM's moral boundaries and generates difficulty-tailored testing items, accurately reflecting the true alignment extent. This process theoretically learns a joint distribution of item and model response, with item difficulty and value conformity as latent variables, where the generator co-evolves with the LLM, mitigating chronoeffects. We evaluate various popular LLMs with diverse capabilities and demonstrate that GETA can create difficulty-matching testing items and more accurately assess LLMs' values, better consistent with their performance on unseen OOD and i.i.d. items, laying the groundwork for future evaluation paradigms."
+    },
+    {
+        "title": "Near, far: Patch-ordering enhances vision foundation models' scene understanding",
+        "link_suffix": "/forum?id=Qro97zWC29",
+        "link": "https://openreview.net/forum?id=Qro97zWC29",
+        "pdf_link": "https://openreview.net/pdf?id=Qro97zWC29",
+        "keywords": "Dense self-supervised learning, Self-supervised learning, Unsupervised semantic segmentation, In-context scene understanding",
+        "abstract": "We introduce NeCo: Patch Neighbor Consistency, a novel self-supervised training loss that enforces patch-level nearest neighbor consistency across a student and teacher model. Compared to contrastive approaches that only yield binary learning signals, i.e. \"attract\" and \"repel\", this approach benefits from the more fine-grained learning signal of sorting spatially dense features relative to reference patches. Our method leverages differentiable sorting applied on top of pretrained representations, such as DINOv2-registers to bootstrap the learning signal and further improve upon them. This dense post-pretraining leads to superior performance across various models and datasets, despite requiring only 19 hours on a single GPU. This method generates high-quality dense feature encoders and establishes several new state-of-the-art results such as +5.5 % and +6% for non-parametric in-context semantic segmentation on ADE20k and Pascal VOC, +7.2% and +5.7% for linear segmentation evaluations on COCO-Things and -Stuff and improvements in the 3D understanding of multi-view consistency on SPair-71k, by more than 10%."
+    },
+    {
+        "title": "Automatically Identifying and Interpreting Sparse Circuits with Hierarchical Tracing",
+        "link_suffix": "/forum?id=89wVrywsIy",
+        "link": "https://openreview.net/forum?id=89wVrywsIy",
+        "pdf_link": "https://openreview.net/pdf?id=89wVrywsIy",
+        "keywords": "Mechanistic Interpretability; Sparse Autoencoder; Circuit Analysis; Large Language Model",
+        "abstract": "We present a novel approach to Transformer circuit analysis using Sparse Autoencoders (SAEs) and Transcoders. SAEs allow fine-grained feature extraction from model activations, while Transcoders handle non-linear MLP outputs for deterministic circuit tracing. Our Hierarchical Tracing method isolates interpretable circuits at both local and global levels, enabling deeper insights into tasks like subject-verb agreement and indirect object identification. Additionally, we introduce an automated workflow leveraging GPT-4o for scalable circuit analysis. This framework provides a clearer understanding of Transformer model behavior and its underlying mechanisms."
+    },
+    {
+        "title": "When Will It Fail?: Anomaly to Prompt for Forecasting Future Anomalies in Time Series",
+        "link_suffix": "/forum?id=kZ3NwWY99f",
+        "link": "https://openreview.net/forum?id=kZ3NwWY99f",
+        "pdf_link": "https://openreview.net/pdf?id=kZ3NwWY99f",
+        "keywords": "Time Series, Time Series Forecasting, Anomaly Detection",
+        "abstract": "Recently, time series forecasting, which predicts future signals, and time series anomaly detection, which identifies abnormal signals in given data, have achieved impressive success. However, in the real world, merely forecasting future signals or detecting anomalies in existing signals is not sufficiently informative to prevent potential system breakdowns, which lead to huge costs and require intensive human labor. In this work, we tackle a challenging and under-explored problem of time series anomaly prediction. In this scenario, the models are required to forecast the upcoming signals while considering anomaly points to detect them. To resolve this challenging task, we propose a simple yet effective framework, Anomaly to Prompt (A2P), which is jointly trained via the forecasting and anomaly detection objectives while sharing the feature extractor for better representation. On top of that, A2P leverages Anomaly-Aware Forecasting (AAF), which derives the anomaly probability by random anomaly injection to forecast abnormal time points. Furthermore, we propose Synthetic Anomaly Prompting (SAP) for more robust anomaly detection by enhancing the diversity of abnormal input signals for training anomaly detection model. As a result, our model achieves state-of-the-art performances on seven real-world datasets, proving the effectiveness of our proposed framework A2P for a new time series anomaly prediction task."
+    },
+    {
+        "title": "NeRAF: 3D Scene Infused Neural Radiance and Acoustic Fields",
+        "link_suffix": "/forum?id=njvSBvtiwp",
+        "link": "https://openreview.net/forum?id=njvSBvtiwp",
+        "pdf_link": "https://openreview.net/pdf?id=njvSBvtiwp",
+        "keywords": "Audio Generation, Novel View Synthesis, Neural Acoustic Fields, Neural Radiance Fields, Implicit Neural Fields, Room Impulse Response",
+        "abstract": "Sound plays a major role in human perception. Along with vision, it provides essential information for understanding our surroundings. Despite advances in neural implicit representations, learning acoustics that align with visual scenes remains a challenge. We propose NeRAF, a method that jointly learns acoustic and radiance fields. NeRAF synthesizes both novel views and spatialized room impulse responses (RIR) at new positions by conditioning the acoustic field on 3D scene geometric and appearance priors from the radiance field. The generated RIR can be applied to auralize any audio signal. Each modality can be rendered independently and at spatially distinct positions, offering greater versatility. We demonstrate that NeRAF generates high-quality audio on SoundSpaces and RAF datasets, achieving significant performance improvements over prior methods while being more data-efficient. Additionally, NeRAF enhances novel view synthesis of complex scenes trained with sparse data through cross-modal learning.\nNeRAF is designed as a Nerfstudio module, providing convenient access to realistic audio-visual generation."
+    },
+    {
+        "title": "Flow Distillation Sampling: Regularizing 3D Gaussians with Pre-trained Matching Priors",
+        "link_suffix": "/forum?id=BzsjHiBfLk",
+        "link": "https://openreview.net/forum?id=BzsjHiBfLk",
+        "pdf_link": "https://openreview.net/pdf?id=BzsjHiBfLk",
+        "keywords": "3D Vision, Differentiable Rendering, 3D Gaussian Splatting",
+        "abstract": "3D Gaussian Splatting (3DGS) has achieved excellent rendering quality with fast training and rendering speed. However, its optimization process lacks explicit geometric constraints, leading to suboptimal geometric reconstruction in regions with sparse or no observational input views. In this work, we try to mitigate the issue by incorporating a pre-trained matching prior to the 3DGS optimization process. We introduce Flow Distillation Sampling (FDS), a technique that leverages pre-trained geometric knowledge to bolster the accuracy of the Gaussian radiance field. Our method employs a strategic sampling technique to target unobserved views adjacent to the input views, utilizing the optical flow calculated from the matching model (Prior Flow) to guide the flow analytically calculated from the 3DGS geometry (Radiance Flow). Comprehensive experiments in depth rendering, mesh reconstruction, and novel view synthesis showcase the significant advantages of FDS over state-of-the-art methods. Additionally, our interpretive experiments and analysis aim to shed light on the effects of FDS on geometric accuracy and rendering quality, potentially providing readers with insights into its performance."
+    },
+    {
+        "title": "Simulating, Fast and Slow: Learning Policies for Black-Box Optimization",
+        "link_suffix": "/forum?id=O9TTAoySaG",
+        "link": "https://openreview.net/forum?id=O9TTAoySaG",
+        "pdf_link": "https://openreview.net/pdf?id=O9TTAoySaG",
+        "keywords": "RL, black-box optimization, learning surrogates, AI for science",
+        "abstract": "Simulators are vital in science and engineering, as they faithfully model the influence of design parameters on real-world observations. A common problem is leveraging the simulator to optimize the design parameters to minimize a desired objective function. Since simulators are often non-differentiable blackboxes and each simulation incurs significant compute time, gradient-based optimization techniques can often be intractable or, in some cases, impossible. Furthermore, in many experiment design settings, practitioners are required to solve sets of closely related optimization problems.  Thus, starting the optimization from scratch each time might be inefficient if the forward simulation model is expensive to evaluate. To address these challenges, this paper introduces a novel method for solving classes of similar black-box optimization problems by learning an active learning policy that guides the training of a differentiable surrogate and then uses that surrogate's gradients to optimize the simulation parameters with gradient descent. After training the policy, the cost for downstream optimization of problems involving black-box simulators is amortized and we require up to $\\sim$90% fewer expensive simulator calls compared to baselines such as local surrogate-based approaches, numerical optimization, and Bayesian methods."
+    },
+    {
+        "title": "The ubiquity of 2-homogeneity, how its implicit bias selects features, and other stories",
+        "link_suffix": "/forum?id=lYQLwP9c9S",
+        "link": "https://openreview.net/forum?id=lYQLwP9c9S",
+        "pdf_link": "https://openreview.net/pdf?id=lYQLwP9c9S",
+        "keywords": "generalization, optimization, margins, deep learning theory",
+        "abstract": "This work studies the optimization and generalization consequences of a seemingly\n  innocuous design choice in many modern architectures:\n  they end with a composition of affine parameters belonging to a normalization layer and a linear layer,\n  resulting in a fundamentally $2$-homogeneous architecture.\n  The first set of results are abstract, showing how any architecture satisfying this type of 2-homogeneity and a\n  few regularity conditions on the gradients of the inner layers obtain large margins\n  and low test error. As technical byproducts, this part of the story provides an implicitly\n  biased gradient flow guarantee and also a nondecreasing margin lemma for inhomogeneous networks. The second set of results instantiate this framework for shallow normalized ReLU networks,\n  establishing large margin and low test error via feature selection\n  purely from random initialization and standard\n  gradient flow. As a corollary, the paper obtains good test error for $k$-bit parity problems,\n  in particular passing\n  below sample complexity lower bounds from linearized analyses such as the  Neural Tangent Kernel."
+    },
+    {
+        "title": "Interactive-Action Image Generation via Synthetic Physical Priors",
+        "link_suffix": "/forum?id=OWIk5E4lJs",
+        "link": "https://openreview.net/forum?id=OWIk5E4lJs",
+        "pdf_link": "https://openreview.net/pdf?id=OWIk5E4lJs",
+        "keywords": "synthetic data, interactive action, generative model",
+        "abstract": "While diffusion-based text-to-image generation has made notable advancements, generating accurate images containing interactive actions remains a challenge due to the lack of inherent physical and spatial priors. To address this problem, we propose a novel pipeline that synthesizes a dataset enriched with physical priors using a graphics engine, combined with a captioning technique. Building on the dataset, we introduce a distillation-structured fine-tuning method, where a teacher network assists in inverting the semantics of interactive actions, leveraging the synthesized priors effectively. This fine-tuning method disentangles the synthetic data features while mitigating random misalignment during the fine-tuning process. Extensive experiments demonstrate that our method not only achieves state-of-the-art results but also highlights the synthetic data's potential to be applied more broadly in enhancing the generation of interactive action images."
+    },
+    {
+        "title": "Test-Time Adaptation for Combating Missing Modalities in Egocentric Videos",
+        "link_suffix": "/forum?id=1L52bHEL5d",
+        "link": "https://openreview.net/forum?id=1L52bHEL5d",
+        "pdf_link": "https://openreview.net/pdf?id=1L52bHEL5d",
+        "keywords": "missing modality, test-time adaptation",
+        "abstract": "Understanding videos that contain multiple modalities is crucial, especially in egocentric videos, where combining various sensory inputs significantly improves tasks like action recognition and moment localization. However, real-world applications often face challenges with incomplete modalities due to privacy concerns, efficiency needs, or hardware issues. Current methods, while effective, often necessitate retraining the model entirely to handle missing modalities, making them computationally intensive, particularly with large training datasets. In this study, we propose a novel approach to address this issue at test time without requiring retraining. We frame the problem as a test-time adaptation task, where the model adjusts to the available unlabeled data at test time. Our method, MiDl~(Mutual information with self-Distillation), encourages the model to be insensitive to the specific modality source present during testing by minimizing the mutual information between the prediction and the available modality. Additionally, we incorporate self-distillation to maintain the model's original performance when both modalities are available. MiDl represents the first self-supervised, online solution for handling missing modalities exclusively at test time. Through experiments with various pretrained models and datasets, MiDl demonstrates substantial performance improvement without the need for retraining."
+    },
+    {
+        "title": "Compressed-Language Models for Understanding Compressed File Formats: a JPEG Exploration",
+        "link_suffix": "/forum?id=3d6awrrpUq",
+        "link": "https://openreview.net/forum?id=3d6awrrpUq",
+        "pdf_link": "https://openreview.net/pdf?id=3d6awrrpUq",
+        "keywords": "Compressed File Formats, JPEG, Autoregressive Transformers",
+        "abstract": "This study investigates whether Compressed-Language Models (CLMs), \\ie language models operating on raw byte streams from Compressed File Formats (CFFs), can understand files compressed by CFFs. We focus on the JPEG format as a representative CFF, given its commonality and its representativeness of key concepts in compression, such as entropy coding and run-length encoding. We test if CLMs understand the JPEG format by probing their capabilities to perform along three axes: recognition of inherent file properties, handling of files with anomalies, and generation of new files. Our findings demonstrate that CLMs can effectively perform these tasks. These results suggest that CLMs can understand the semantics of compressed data when directly operating on the byte streams of files produced by CFFs. The possibility to directly operate on raw compressed files offers the promise to leverage the ubiquitous and multi-modal properties of CFFs."
+    },
+    {
+        "title": "KAE: Kolmogorov-Arnold Auto-Encoder for Representation Learning",
+        "link_suffix": "/forum?id=K9xuqsaP0R",
+        "link": "https://openreview.net/forum?id=K9xuqsaP0R",
+        "pdf_link": "https://openreview.net/pdf?id=K9xuqsaP0R",
+        "keywords": "Kolmogorov-Arnold Network, Auto-Encoder, Representation Learning",
+        "abstract": "The Kolmogorov-Arnold Network (KAN) has recently emerged as a promising alternative to traditional multi-layer perceptrons (MLPs), offering enhanced accuracy and interpretability through learnable activation functions on edges instead of fixed functions on nodes. In this paper, we present the Kolmogorov-Arnold Auto-Encoder (KAE), a novel integration of KAN with autoencoders (AEs) that aims to improve representation learning and performance in retrieval, classification, and denoising tasks. By utilizing the flexible polynomial functions in KAN layers, KAE effectively captures complex data patterns and non-linear relationships, outperforming standard autoencoders. Our extensive experiments on benchmark datasets show that KAE significantly enhances the quality of latent representations, resulting in reduced reconstruction and denoising errors, and also improves performance in downstream tasks, including higher classification accuracy, retrieval recall, and interpretability compared to standard autoencoders and other KAN variants. These findings position KAE as a practical tool for high-dimensional data analysis, paving the way for more robust performance in representation learning. The code is available at \\url{https://anonymous.4open.science/r/KAE/}."
+    },
+    {
+        "title": "LSH Tells You What To Discard: An Adaptive Locality-Sensitive Strategy for KV Cache Compression",
+        "link_suffix": "/forum?id=0ZcQhdyI3n",
+        "link": "https://openreview.net/forum?id=0ZcQhdyI3n",
+        "pdf_link": "https://openreview.net/pdf?id=0ZcQhdyI3n",
+        "keywords": "kv cache, locality-sensitive hashing, compression",
+        "abstract": "Transformer-based large language models (LLMs) use the key-value (KV) cache to significantly accelerate inference by storing the key and value embeddings of past tokens. However, this cache consumes significant GPU memory. In this work, we introduce LSH-E, an algorithm that uses locality-sensitive hashing (LSH) to compress the KV cache. LSH-E quickly locates tokens in the cache that are cosine dissimilar to the current query token. This is achieved by computing the Hamming distance between binarized Gaussian projections of the current token query and cached token keys, with a projection length much smaller than the embedding dimension. We maintain a lightweight binary structure in GPU memory to facilitate these calculations. Unlike existing compression strategies that compute attention to determine token retention, LSH-E makes these decisions pre-attention, thereby reducing computational costs. Additionally, LSH-E is dynamic -- at every decoding step, the key and value of the current token replace the embeddings of a token expected to produce the lowest attention score. We demonstrate that LSH-E can compress the KV cache by 30%-70% while maintaining high performance across reasoning, multiple-choice, and long-context retrieval tasks."
+    },
+    {
+        "title": "Latent Task-Specific Graph Network Simulators",
+        "link_suffix": "/forum?id=3lDxKQepvn",
+        "link": "https://openreview.net/forum?id=3lDxKQepvn",
+        "pdf_link": "https://openreview.net/pdf?id=3lDxKQepvn",
+        "keywords": "Graph Network Simulators, Graph Neural Networks, Meta-Learning, Neural Processes, Deformable Object Simulation, MeshGraphNets",
+        "abstract": "Simulating object deformations is a critical challenge in many scientific domains, with applications ranging from robotics to materials science. \nLearned Graph Network Simulators (GNSs) are an efficient alternative to traditional mesh-based physics simulators. Their speed and inherent differentiability make them particularly well-suited for inverse design problems such as process optimization.\nHowever, these applications typically offer limited available data, making GNSs difficult to use in real-world scenarios. We frame mesh-based simulation as a meta-learning problem and apply conditional Neural Processes to adapt to new simulation scenarios with little data. In addition, we address the problem of error accumulation common in previous step-based methods by combining this approach with movement primitives, allowing efficient predictions of full trajectories. We validate the effectiveness of our approach, called Movement-primitive Meta-MeshGraphNet (M3GN), through a variety of experiments, outperforming state-of-the-art step-based baseline GNSs and step-based meta-learning methods."
+    },
+    {
+        "title": "Model-based Offline Reinforcement Learning with Lower Expectile Q-Learning",
+        "link_suffix": "/forum?id=OATPSB5JK1",
+        "link": "https://openreview.net/forum?id=OATPSB5JK1",
+        "pdf_link": "https://openreview.net/pdf?id=OATPSB5JK1",
+        "keywords": "model-based offline reinforcement learning, offline reinforcement learning, lower expectile return",
+        "abstract": "Model-based offline reinforcement learning (RL) is a compelling approach that addresses the challenge of learning from limited, static data by generating imaginary trajectories using learned models. However, these approaches often struggle with inaccurate value estimation from model rollouts. In this paper, we introduce a novel model-based offline RL method, Lower Expectile Q-learning (LEQ), which provides a low-bias model-based value estimation via lower expectile regression of $\\lambda$-returns. Our empirical results show that LEQ significantly outperforms previous model-based offline RL methods on long-horizon tasks, such as the D4RL AntMaze tasks, matching or surpassing the performance of model-free approaches and sequence modeling approaches. Furthermore, LEQ matches the performance of state-of-the-art model-based and model-free methods in dense-reward environments across both state-based tasks (NeoRL and D4RL) and pixel-based tasks (V-D4RL), showing that LEQ works robustly across diverse domains. Our ablation studies demonstrate that lower expectile regression, $\\lambda$-returns, and critic training on offline data are all crucial for LEQ."
+    },
+    {
+        "title": "SynFlowNet: Design of Diverse and Novel Molecules with Synthesis Constraints",
+        "link_suffix": "/forum?id=uvHmnahyp1",
+        "link": "https://openreview.net/forum?id=uvHmnahyp1",
+        "pdf_link": "https://openreview.net/pdf?id=uvHmnahyp1",
+        "keywords": "GFlowNets, de novo molecular generation, synthesizable molecular design",
+        "abstract": "Generative models see increasing use in computer-aided drug design. However, while performing well at capturing distributions of molecular motifs, they often produce synthetically inaccessible molecules. To address this, we introduce SynFlowNet, a GFlowNet model whose action space uses chemical reactions and buyable reactants to sequentially build new molecules. By incorporating forward synthesis as an explicit constraint of the generative mechanism, we aim at bridging the gap between in silico molecular generation and real world synthesis capabilities. We evaluate our approach using synthetic accessibility scores and an independent retrosynthesis tool to assess the synthesizability of our compounds, and motivate the choice of GFlowNets through considerable improvement in sample diversity compared to baselines. Additionally, we identify challenges with reaction encodings that can complicate traversal of the MDP in the backward direction. To address this, we introduce various strategies for learning the GFlowNet backward policy and thus demonstrate how additional constraints can be integrated into the GFlowNet MDP framework. This approach enables our model to successfully identify synthesis pathways for previously unseen molecules."
+    },
+    {
+        "title": "A Large-scale Dataset and Benchmark for Commuting Origin-Destination Flow Generation",
+        "link_suffix": "/forum?id=WeJEidTzff",
+        "link": "https://openreview.net/forum?id=WeJEidTzff",
+        "pdf_link": "https://openreview.net/pdf?id=WeJEidTzff",
+        "keywords": "Commuting, origin-destination flow dataset, urban computing, weighted graph modeling",
+        "abstract": "Commuting Origin-Destination~(OD) flows are critical inputs for urban planning and transportation, providing crucial information about the population residing in one region and working in another within an interested area. Due to the high cost of data collection, researchers have developed physical and computational models to generate commuting OD flows using readily available urban attributes, such as sociodemographics and points of interest, for cities lacking historical OD flows \\textemdash commuting OD flow generation. Existing works developed models based on different techniques and achieved improvement on different datasets with different evaluation metrics, which hinderes establishing a unified standard for comparing model performance. To bridge this gap, we introduce a large-scale dataset containing commuting OD flows for 3,333 areas including a wide range of urban environments around the United States. Based on that, we benchmark widely used models for commuting OD flow generation. We surprisingly find that the network-based generative models achieve the optimal performance in terms of both precision and generalization ability, which may inspire new research directions of graph generative modeling in this field. The dataset and benchmark are available athttps://anonymous.4open.science/r/CommutingODGen-Dataset-0D4C/."
+    },
+    {
+        "title": "Cross-Domain Off-Policy Evaluation and Learning for Contextual Bandits",
+        "link_suffix": "/forum?id=Z8dr422vtr",
+        "link": "https://openreview.net/forum?id=Z8dr422vtr",
+        "pdf_link": "https://openreview.net/pdf?id=Z8dr422vtr",
+        "keywords": "Off-Policy Evaluation, Off-Policy Learning, Importance Weighting, Cross Domain",
+        "abstract": "Off-Policy Evaluation and Learning (OPE/L) in contextual bandits is rapidly gaining popularity in real systems because new policies can be evaluated and learned securely using only historical logged data. However, existing methods in OPE/L cannot handle many challenging but prevalent scenarios such as few-shot data, deterministic logging policies, and new actions. In many applications, such as personalized medicine, content recommendations, education, and advertising, we need to evaluate and learn new policies in the presence of these challenges. Existing methods cannot evaluate and optimize effectively in these situations due to the notorious variance issue or limited exploration in the logged data. To enable OPE/L even under these unsolved challenges, we propose a new problem setup of Cross-Domain OPE/L, where we have access not only to the logged data from the target domain in which the new policy will be implemented but also to logged datasets collected from other domains. This novel formulation is widely applicable because we can often use historical data not only from the target hospital, country, device, or user segment but also from other hospitals, countries, devices, or segments. We develop a new estimator and policy gradient method to solve OPE/L by leveraging both target and source datasets, resulting in substantially enhanced OPE/L in the previously unsolved situations in our empirical evaluations."
+    },
+    {
+        "title": "MAST: model-agnostic sparsified training",
+        "link_suffix": "/forum?id=sPuLtU32av",
+        "link": "https://openreview.net/forum?id=sPuLtU32av",
+        "pdf_link": "https://openreview.net/pdf?id=sPuLtU32av",
+        "keywords": "dropout theory, sparse training",
+        "abstract": "We introduce a novel optimization problem formulation that departs from the conventional way of minimizing machine learning model loss as a black-box function. Unlike traditional formulations, the proposed approach explicitly incorporates an initially pre-trained model and random sketch operators, allowing for sparsification of both the model and gradient during training. We establish insightful properties of the proposed objective function and highlight its connections to the standard formulation. Furthermore, we present several variants of the Stochastic Gradient Descent (SGD) method adapted to the new problem formulation, including SGD with general sampling, a distributed version, and SGD with variance reduction techniques. We achieve tighter convergence rates and relax assumptions, bridging the gap between theoretical principles and practical applications, covering several important techniques such as Dropout and Sparse training. This work presents promising opportunities to enhance the theoretical understanding of model training through a sparsification-aware optimization approach."
+    },
+    {
+        "title": "Scaling Law with Learning Rate Annealing",
+        "link_suffix": "/forum?id=o9YC0B6P2m",
+        "link": "https://openreview.net/forum?id=o9YC0B6P2m",
+        "pdf_link": "https://openreview.net/pdf?id=o9YC0B6P2m",
+        "keywords": "Scaling Laws, Full Loss Curve Prediction, Learning Rate Schedule, LLM Pretraining",
+        "abstract": "We find that the cross-entropy loss curves of neural language models empirically adhere to a scaling law with learning rate (LR) annealing over training steps:\n$$L(s) = L_0 + A\\cdot S_1^{-\\alpha} - C\\cdot S_2,$$\nwhere $L(s)$ is the validation loss at step $s$, $S_1$ is the area under the LR curve, $S_2$ is the LR annealing area, and $L_0$, $A$, $C$, $\\alpha$ are constant parameters.\nThis formulation accounts for two main effects: (1) power-law scaling over data size, and (2) the additional loss reduction during LR annealing. \nUnlike previous studies that only fit losses at final steps, our formulation captures the entire training curve, allowing for parameter fitting using losses from any training step.\nApplying the scaling law with LR annealing and fitting only one or two training curves, we can accurately predict the loss at any given step under any learning rate scheduler (LRS).\nThis approach significantly reduces computational cost in formulating scaling laws while providing more accuracy and expressiveness.\nExtensive experiments demonstrate that our findings hold across a range of hyper-parameters and model architectures and can extend to scaling effect of model sizes.\nMoreover, our formulation provides accurate theoretical insights into empirical results observed in numerous previous studies, particularly those focusing on LR schedule and annealing.\nWe believe that this work is promising to enhance the understanding of LLM training dynamics while democratizing scaling laws, and it is helpful to guide both research and industrial participants in refining training strategies for further LLMs."
+    },
+    {
+        "title": "CodeUnlearn: Amortized Zero-Shot Machine Unlearning in Language Models Using Discrete Concept",
+        "link_suffix": "/forum?id=E6rpTruK4v",
+        "link": "https://openreview.net/forum?id=E6rpTruK4v",
+        "pdf_link": "https://openreview.net/pdf?id=E6rpTruK4v",
+        "keywords": "machine unlearning, discrete representation, AI safety, LLM",
+        "abstract": "Large Language Models (LLMs) offer extensive knowledge across various domains, but they may inadvertently memorize sensitive, unauthorized, or malicious data, such as personal information in the medical and financial sectors. Machine unlearning methods aim to remove specific information from models after training to address this. However, current approaches require additional model training or struggle to effectively erase particular data points and their associated context due to LLMs' complex, dense, and continuous nature. In this study, we propose a novel amortized unlearning approach using codebook features and Sparse Autoencoders (SAEs). By leveraging a bottleneck to decompose the activation space and regulate information flow, our method efficiently unlearns targeted information while preserving the model's performance on unrelated data. To the best of our knowledge, this is the first work that successfully enables unlearning specific topics with contextual relevance in an LLM, marking a significant step towards real-world applications of machine unlearning."
+    },
+    {
+        "title": "Pseudo-Non-Linear Data Augmentation via Energy Minimization",
+        "link_suffix": "/forum?id=rPup1cWk4d",
+        "link": "https://openreview.net/forum?id=rPup1cWk4d",
+        "pdf_link": "https://openreview.net/pdf?id=rPup1cWk4d",
+        "keywords": "data augmentation, information geometry, interpretability",
+        "abstract": "We propose a novel and interpretabledata augmentationmethod based onenergy-based modelingand principles frominformation geometry. Unlike black-box generative models, which rely on deep neural networks, our approach replaces these non-interpretable transformations with explicit, theoretically grounded ones, ensuring interpretability and strong guarantees such as energy minimization. Central to our method is the introduction of thebackward projectionalgorithm, which reverses dimension reduction to generate new data. Empirical results demonstrate that our method achieves competitive performance with black-box generative models while offering greater transparency and interpretability."
+    },
+    {
+        "title": "Gradient Regularization-based Cross-Prompt Attacks on Vision Language Models",
+        "link_suffix": "/forum?id=I05Z6KjQ9K",
+        "link": "https://openreview.net/forum?id=I05Z6KjQ9K",
+        "pdf_link": "https://openreview.net/pdf?id=I05Z6KjQ9K",
+        "keywords": "Adversarial attacks, vision language models, cross-prompt",
+        "abstract": "Recent large vision language models (VLMs) have gained significant attention for their superior performance in various visual understanding tasks using textual instructions, also known as prompts.\nHowever, existing research shows that VLMs are vulnerable to adversarial examples, where imperceptible perturbations added to images can lead to malicious outputs, posing security risks during deployment.\nUnlike single-modal models, VLMs process both images and text simultaneously, making the creation of visual adversarial examples dependent on specific prompts.\nConsequently, the same adversarial example may become ineffective when different prompts are used, which is common as users often input diverse prompts.\nOur experiments reveal severe non-stationarity when directly optimizing adversarial example generation using multiple prompts, resulting in examples specific to a single prompt with poor transferability.\nTo address this issue, we propose the Gradient Regularized-based Cross-Prompt Attack (GrCPA), which leverages gradient regularization to generate more robust adversarial attacks, thereby improving the assessment of model robustness.\nBy exploiting the structural characteristics of the Transformer, GrCPA reduces the variance of back-propagated gradients in the Attention and MLP components, utilizing regularized gradients to produce more effective adversarial examples.\nExtensive experiments on models such as Flamingo, BLIP-2, LLaVA and InstructBLIP demonstrate the effectiveness of GrCPA in enhancing the transferability of adversarial attacks across different prompts."
+    },
+    {
+        "title": "Generalization of Spectral Graph Neural Networks",
+        "link_suffix": "/forum?id=UAEmF5O8J3",
+        "link": "https://openreview.net/forum?id=UAEmF5O8J3",
+        "pdf_link": "https://openreview.net/pdf?id=UAEmF5O8J3",
+        "keywords": "graph learning, graph neural networks, generalization, node classification, uniform stability",
+        "abstract": "Despite the success of spectral GNNs in practical applications, their generalization capabilities remain poorly understood in theory. In particular, node classification tasks are influenced by node class distribution and graph homophily, yet the relationship between these factors and the generalization of GNNs is largely unexplored. In this paper, we address this gap by analyzing how graph homophily and architectural choices impact the generalization of spectral GNNs. We first derive a general form of uniform transductive stability for spectral GNNs and then provide an explicit stability on graphs with two node classes, offering a comprehensive framework for understanding their generalization properties. Based on this stability analysis, we establish a generalization error bound, demonstrating that spectral GNNs with better stability exhibit better generalization. Our theoretical results reveal that spectral GNNs generalize effectively on graphs with strong homophily or heterophily, while their generalization degrades on graphs with weaker homophilic or heterophilic structures. Furthermore, we identify the conditions under which increasing the polynomial order in the architecture of spectral GNNs can increase the generalization error. To support our theoretical insights, we conduct experiments on synthetic and real-world benchmark datasets, and empirical results closely align with our theoretical analysis."
+    }
+]
